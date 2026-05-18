@@ -84,11 +84,11 @@ pre_study/<module>/<Topic>/README.md
 | 🟡 | RAG | [📝](./ai-fundamentals/RAG/README.md) | 切分、向量库、检索、Rerank、Citation |
 | 🟡 | Agent | [📝](./ai-fundamentals/Agent/README.md) | 工具调用、规划、状态、反思、多智能体 |
 | 🟡 | Frameworks | [📝](./ai-fundamentals/Frameworks/README.md) | LangChain、LangGraph、OpenAI Agents SDK、DSPy |
-| ⚪ | Vibe-Coding | [📝](./ai-fundamentals/Vibe-Coding/README.md) | Claude Code、Codex CLI、人机协作工作流 |
-| ⚪ | MCP | [📝](./ai-fundamentals/MCP/README.md) | Server / Client / Tool Schema / Permission |
-| ⚪ | Evaluation | [📝](./ai-fundamentals/Evaluation/README.md) | 评估框架、Golden Set、LLM-as-Judge、回归测试 |
-| ⚪ | Fine-tuning | [📝](./ai-fundamentals/Fine-tuning/README.md) | SFT、LoRA、PEFT、数据集、过拟合 |
-| ⚪ | Inference | [📝](./ai-fundamentals/Inference/README.md) | API 模型、本地模型、量化、推理服务部署 |
+| 🟡 | Vibe-Coding | [📝](./ai-fundamentals/Vibe-Coding/README.md) | Claude Code、Codex CLI、人机协作工作流 |
+| 🟡 | MCP | [📝](./ai-fundamentals/MCP/README.md) | Server / Client / Tool Schema / Permission |
+| 🟡 | Evaluation | [📝](./ai-fundamentals/Evaluation/README.md) | 评估框架、Golden Set、LLM-as-Judge、回归测试 |
+| 🟡 | Fine-tuning | [📝](./ai-fundamentals/Fine-tuning/README.md) | SFT、LoRA、PEFT、数据集、过拟合 |
+| 🟡 | Inference | [📝](./ai-fundamentals/Inference/README.md) | API 模型、本地模型、量化、推理服务部署 |
 
 ### 模块二 · Web3 基础（10 节）
 
@@ -140,11 +140,11 @@ pre_study/<module>/<Topic>/README.md
 
 | 模块 | 已完成 / 总数 |
 |------|--------------|
-| AI 基础 | 0 / 11 |
+| AI 基础 | 11 / 11 |
 | Web3 基础 | 0 / 10 |
 | AI × Web3 交叉 | 0 / 15 |
 | 前沿探索 | 0 / 6 |
-| **合计** | **0 / 42** |
+| **合计** | **11 / 42** |
 
 > 每完成一节 Agent 就回到这里更新 并且 维护 对应行的状态和总进度数字, 在通过人工的review微调, 进行 commit & push
 
