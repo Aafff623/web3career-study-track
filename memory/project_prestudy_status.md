@@ -1,21 +1,16 @@
 ---
 name: pre-study-status
-description: AI 基础模块 6 节预习笔记已全部完成（LLM/Prompt/Context/RAG/Agent/Frameworks），含实践文件
+description: AI 基础模块 11 节预习笔记全部完成，总进度 11/42
 metadata:
   type: project
 ---
 
-2026-05-18 完成 AI 基础模块全部 6 节预习笔记的整理：
+2026-05-18 完成 AI 基础模块全部 11 节预习笔记：
 
-| 模块 | 状态 | 实践文件 |
-|------|------|----------|
-| LLM | ✅ | transaction-explainer.md |
-| Prompt | ✅ | transaction-risk-summary-prompt.md |
-| Context | ✅ | wallet-authorization-check-agent.md |
-| RAG | ✅ | protocol-doc-rag-qa.md |
-| Agent | ✅ | dao-proposal-research-agent.md |
-| Frameworks | ✅ | framework-comparison.md |
+LLM → Prompt → Context → RAG → Agent → Frameworks → Vibe-Coding → MCP → Evaluation → Fine-tuning → Inference
 
-**Why:** 预习阶段是 Week 1-2 的知识储备，6 节全部标为 ✅ 已完成。
+每个模块含 README.md（原文+批注）+ 实践文件。总进度 11/42。
 
-**How to apply:** 后续预习模块（AI 应用、Web3 基础等）继续按相同规范整理，每个模块一个 README.md + 一个实践文件。
+**Why:** AI 基础是 Week 1-2 的核心知识储备，11 节全部完成。
+
+**How to apply:** 下一步推进 Web3 基础模块（Cryptography → Wallet → Smart Contract...）。
