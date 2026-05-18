@@ -40,8 +40,9 @@
 web3career-study-track/
 │
 ├── README.md                  ← 你正在看的这个
-├── CLAUDE.md                  ← 给 AI 助手看的项目说明（Claude Code / Kiro 这类工具会读）
-├── steering.md                ← 我自己的方向盘：核心目标、决策记录、风险提醒
+├── GUIDE.md                   ← 项目通用规范（Claude Code / Kiro 等工具共用）
+├── CLAUDE.md                  ← Claude Code 专用行为指引
+├── steering.md                ← Kiro 专用方向与决策指引
 │
 ├── pre_study/                 ← 输入：42 节预习目录（随营期推进逐节填充）
 │   ├── __index__.md             42 节总目录 + 每节状态（⚪ / 🟡 / ✅）

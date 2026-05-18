@@ -129,4 +129,4 @@
 
 - 本周对应仓库根目录 [`steering.md`](../../steering.md) 的 "Week 1：建立共同语言"
 - 预习目录见 [`pre_study/__index__.md`](../../pre_study/__index__.md)，作为本周补短板的快速参考
-- 任务清单生成流程见 [`CLAUDE.md`](../../CLAUDE.md) 的 "任务清单生成流程" 节
+- 任务清单生成流程见 [`GUIDE.md`](../../GUIDE.md) 的 "任务清单生成流程" 节

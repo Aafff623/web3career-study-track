@@ -1,79 +1,54 @@
 # CLAUDE.md
 
-> 项目级 AI 助手指令文件，适用于 Claude Code / Kiro / 类似工具
+> Claude Code 接入本项目时的方向与决策指引。项目级通用规范见 [`GUIDE.md`](./GUIDE.md)。
 
-## 项目概述
+## 核心目标
 
-这是 AI Web3 School BootCamp（4 周共学营 + 黑客松）的学习记录仓库。内容包括每日笔记、任务打卡、预习资料和 Hackathon 项目代码。
+1. **完成 4 周共学营全部打卡**——每天有记录，不断档
+2. **产出可演示的 Hackathon 项目**——附测试网 Tx Hash
+3. **建立可验证的 Builder Profile**——WCB 平台上有完整轨迹
 
-## 仓库结构
+## 当前阶段
 
-- `daily-log/week-N/YYYY-MM-DD/` — 每日学习记录（笔记 + 任务 + 资源）；按周→日两层组织
-- `daily-log/week-N/WEEK.md` — 当周完整目标、任务和推荐材料
-- `daily-log/week-N/__index__.md` — 当周概览与每日索引
-- `pre_study/` — 预习阶段 42 节知识笔记
-- `hackathon/` — Hackathon 项目代码与演示
-- `reference/` — 规范文件
+- [x] 预习目录就位（42 节占位 README 已建，详见 [`pre_study/__index__.md`](./pre_study/__index__.md)）
+- [ ] Week 1：建立共同语言（05/17 - 05/23）·  进行中 🟢
+- [ ] Week 2：交叉方向深入（05/24 - 05/30）
+- [ ] Week 3：Hackathon 启动（05/31 - 06/06）
+- [ ] Week 4：集中开发提交（06/07 - 06/14）
 
-## 工作约定
+## 决策记录
 
-### 文件操作
+| 日期 | 决策 | 原因 |
+|------|------|------|
+| 05-17 | 仓库结构确定：daily-log + pre_study + hackathon | 对应输入→过程→输出三阶段 |
+| | Hackathon 方向待定 | Week 1-2 先学习再选方向 |
 
-- 每日记录放 `daily-log/week-N/对应日期/` 下，不要跨天合并
-- 笔记写在 `YYYY-MM-DD.md`，任务写在 `TASK.md`，索引和链接写在 `__index__.md`
-- 周级目标和任务写在 `daily-log/week-N/WEEK.md`，周级索引写在 `daily-log/week-N/__index__.md`
-- 图片放 `assets/` 文件夹，用相对路径引用
-- 预习笔记按模块放对应子文件夹，每个主题一个文件夹
+## 优先级原则
 
-### Git 提交
+1. **每日打卡 > 笔记完美度**——先交再改，不要因为整理笔记而错过打卡
+2. **理解 > 记录**——笔记是帮助理解的工具，不是目的
+3. **可演示 > 功能完整**——Hackathon 项目做出闭环 Demo 比功能多更重要
+4. **链上证明 > 本地运行**——部署到测试网是硬性要求
 
-- 遵循 `reference/git-commit-reference.md` 中的规范
-- 格式：`<type>(<scope>): <subject>`
-- 高频类型：`log`（笔记）、`task`（任务打卡）
-- scope 用 `MM-DD` 日期格式
-- 不合并多天内容为一个 commit
+## Hackathon 候选方向
 
-### 任务清单生成流程
+> Week 2 结束前确定，选一个深入
 
-> 把任务平台 / 主办方页面上看到的任务信息，结构化地落到对应文件里。
+1. Smart Account + Session Key（AI Agent 安全执行链上操作）
+2. Agentic Commerce 闭环（智能体决策→链上执行→验收）
+3. AI-native Wallet（重新设计钱包确认 UX）
+4. On-chain Data Analysis Agent（链上数据分析智能体）
 
-**输入**（由人提供）：
-- **当日上下文**：当天面板上的具体任务（线上活动、Co-learning、相关链接、学分、截止）
-- **当周上下文**：整周任务总览（前置准备、AI 向、Web3 向、综合、行业观察等长期任务）
+## 风险与注意
 
-**输出位置**：
-- **当日具体任务（线上活动 / 当天的提交）** → `daily-log/week-N/YYYY-MM-DD/TASK.md`
-- **整周任务菜单（长期任务 + 全周日期事件）** → `daily-log/week-N/__index__.md` 的 "本周课程任务清单" 节
-- **任务对应的知识沉淀** → `pre_study/<module>/<topic>/README.md`
-- **当日的执行叙事和反思** → `daily-log/week-N/YYYY-MM-DD/YYYY-MM-DD.md`
+- 前两周不能划水，否则 Week 3-4 接不住 Hackathon
+- 项目提交必须有测试网 Tx Hash，不能只有本地代码
+- 注意保护私钥/助记词，不要提交到仓库
 
-**TASK.md 写法**：
-- 顶部 "今日任务清单" 表格列出当天所有任务（# / 任务 / 时间 / 学分 / 状态）
-- 状态图例：⚪ 未开始 · ⏳ 进行中 · ✅ 已完成 · ❌ 错过 · 📤 已提交
-- 每个任务展开 "任务详情" 子节，含会议链接 / 课前准备 / 注意事项
-- 完成后回填 "产出" 和 "交付证明"
-- 详细叙事不在 TASK.md 里写，写到当日 `YYYY-MM-DD.md`，TASK.md 只链过去
+## Claude Code 行为约定
 
-**周任务清单写法**（在 `week-N/__index__.md` 里）：
-- 按类别分表：前置准备 / 实时参加 / 回放兜底 / AI 向 / Web3 向 / 综合 / 总结观察
-- 每行：状态 + 日期（如有） + 任务 + 学分
-- 末尾给学分汇总（上限值，不含互斥）
-
-### 内容风格
-
-- 中文为主，技术术语保留英文
-- 笔记结构：概览 → 关键收获 → 问题与讨论
-- 保持简洁，避免完美主义，先记录再优化
-
-### Hackathon 阶段（Week 3-4）
-
-- 合约代码放 `hackathon/contracts/`
-- Demo 材料放 `hackathon/demo/`
-- 部署后在 TASK.md 中记录 Tx Hash 和合约地址
-- commit 类型用 `feat` / `contract` / `fix`
-
-## 禁止事项
-
-- 不要修改 `reference/` 下的规范文件（除非明确要求）
-- 不要在 commit message 中暴露私钥、助记词等敏感信息
-- 不要把 `.env` 或密钥文件加入版本控制
+1. **不要假设** —— 不确定时先问，不要凭空补全缺失信息
+2. **最小改动** —— 只改用户要求的部分，不顺手重构无关代码
+3. **先理解再动手** —— 阅读相关文件和上下文后再给出方案
+4. **保持风格一致** —— 匹配项目现有的 Markdown 格式和命名规范
+5. **不要自动 commit & push** —— 完成任务后等用户 review 并明确授权

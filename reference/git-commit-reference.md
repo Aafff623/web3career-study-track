@@ -1,6 +1,6 @@
 # Git Commit 规范
 
-> 针对 AI Web3 School BootCamp 4 周共学营的提交节奏设计
+> 针对 AI Web3 School BootCamp 4 周共学营的提交节奏设计的 个性化的 commit Agent参考的git提交规范
 
 ## Commit 格式
 
@@ -69,7 +69,7 @@ chore: 调整目录结构
 4. **有 Tx Hash 时**在 commit body 里附上：
    ```
    task(06-10): 提交最终项目合约
-
+   
    Tx Hash: 0x1234...abcd
    Network: Sepolia
    Contract: 0xabcd...1234
