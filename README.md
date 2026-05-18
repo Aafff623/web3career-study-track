@@ -1,170 +1,130 @@
-# AI Web3 School BootCamp 学习记录
+# AI Web3 School · 我的共学营笔记本
 
-> 4 周线上共学营 + 黑客松 | 主题：AI × Web3 交叉方向  
-> 状态：进行中 | 开营：2026-05-17
+> 4 周线上共学营 + 黑客松，主题是 AI × Web3 交叉方向。
+> 开营：2026-05-17 · 状态：进行中 🟢
 
-## 项目定位
+## 这是什么
 
-当 AI Agent 能调用工具、读写数据、触发支付时，**谁授权、谁付款、责任边界在哪里**——这正是 Web3 基础设施（钱包、签名、智能合约、账户抽象）要解决的问题。
+这个仓库是我参加 [AI Web3 School BootCamp](https://aiweb3.school/) 的"工作台"——从开营那天到 Hackathon 提交，所有的课程笔记、Co-Learning 讨论、每日打卡、踩过的坑、最后那个能跑起来（希望能跑起来）的项目，都堆在这里。
 
-本仓库记录从预习到 Hackathon 全程的学习笔记、每日产出与项目交付。
+不是写给别人看的展示稿，更像是我自己的实验记录簿，顺便公开。
 
----
+## 为什么是这件事
 
-## 学习节奏
+最近一直在想一个问题：
 
-| 阶段 | 时间 | 内容 | 产出 |
-|------|------|------|------|
-| Week 1 | 05/17 - 05/23 | 建立 AI 与 Web3 的共同语言 | 基础概念笔记、Co-Learning 打卡 |
-| Week 2 | 05/24 - 05/30 | AI × Web3 交叉方向深入 | Bridge 模块笔记、分享会记录 |
-| Week 3 | 05/31 - 06/06 | 实践深化 + Hackathon 启动 | 项目方向确定、初步实现 |
-| Week 4 | 06/07 - 06/14 | 集中开发、提交与 Demo 展示 | 项目代码 + 测试网 Tx Hash |
+> 当 AI Agent 真的能调用工具、读写数据、甚至触发支付的时候，**谁授权？谁付款？责任边界在哪？**
 
-每天有：课程/分享会 → Co-Learning 讨论 → 任务打卡 → 产出提交
+我越想越觉得，这不是 AI 圈子单方面能回答的问题。授权、签名、不可伪造的执行记录、可撤销的能力——这些恰好是 Web3 这十年攒下来的基础设施在做的事。
 
----
+但两边的人现在还各说各话：AI 圈子里很多人不知道 Session Key 是啥，Web3 圈子里很多人觉得 Agent 只是"接个 API 而已"。我想花这 4 周泡在这个交叉地带，把两套语言学到能互译，最后做出一个能在测试网上跑起来的小东西。
 
-## 仓库结构
+这个仓库就是这个过程。
+
+## 整体节奏
+
+| 阶段 | 时间窗口 | 我在干啥 | 想交付的东西 |
+|------|---------|---------|------------|
+| Week 1 | 05/17 — 05/23 | 把 AI 和 Web3 的基础概念串到一条线上 | 基础笔记 + Co-Learning 打卡 |
+| Week 2 | 05/24 — 05/30 | 钻进 AI × Web3 真正交叉的那些点 | Bridge 模块笔记 + 分享会记录 |
+| Week 3 | 05/31 — 06/06 | 选定 Hackathon 方向，开始动手 | 项目方向定稿 + 第一版能跑的代码 |
+| Week 4 | 06/07 — 06/14 | 闷头开发、改 bug、交东西 | 最终代码 + 测试网 Tx Hash + Demo |
+
+每天的循环大致是：**听课/分享会 → Co-Learning 讨论 → 当日任务 → 写笔记 → commit**。
+
+## 仓库怎么组织
+
+我把仓库刻意做成了"输入 → 过程 → 输出"三层：
 
 ```
 web3career-study-track/
 │
-├── README.md                          ← 本文件（总览 + 核心提炼）
+├── README.md                  ← 你正在看的这个
+├── CLAUDE.md                  ← 给 AI 助手看的项目说明（Claude Code / Kiro 这类工具会读）
+├── steering.md                ← 我自己的方向盘：核心目标、决策记录、风险提醒
 │
-├── daily-log/                         ← 【每日记录】按周→日两层组织
-│   ├── __index__.md                    规范说明 + 模板
-│   ├── week-1/                        Week 1: 05/17 - 05/23 建立共同语言
-│   │   ├── __index__.md                当周概览 + 每日索引表
-│   │   ├── WEEK.md                     当周完整目标、任务、推荐材料
-│   │   ├── 2026-05-17/                每天一个文件夹
-│   │   │   ├── __index__.md            当日索引：概览、参考链接
-│   │   │   ├── 2026-05-17.md           学习笔记
-│   │   │   ├── TASK.md                 任务与产出、交付证明
-│   │   │   └── assets/                 截图、图片
-│   │   ├── ...
-│   │   └── 2026-05-23/
-│   ├── week-2/                        Week 2: 05/24 - 05/30 交叉方向深入
-│   ├── week-3/                        Week 3: 05/31 - 06/06 Hackathon 启动
-│   └── week-4/                        Week 4: 06/07 - 06/14 集中开发 + 提交
+├── pre_study/                 ← 输入：42 节预习目录（随营期推进逐节填充）
+│   ├── __index__.md             42 节总目录 + 每节状态（⚪ / 🟡 / ✅）
+│   ├── ai-fundamentals/         AI 基础（11 节）：LLM / Prompt / Context / RAG / Agent / Frameworks ...
+│   ├── web3-fundamentals/       Web3 基础（10 节）：钱包 / 合约 / EVM / AA / DeFi / Oracle ...
+│   ├── ai-web3-bridge/          交叉地带（15 节）：Agent Wallet / Machine Payment / Verifiable AI ...
+│   └── frontier/                前沿探索（6 节）：Agentic Commerce / AI Wallet / Open Track ...
 │
-├── pre_study/                         ← 【预习阶段】开营前完成的 42 节知识笔记
-│   │
-│   ├── ai-fundamentals/              ← 模块一：AI 基础（11 节）
-│   │   ├── LLM/                       Token、Embedding、幻觉、模型在系统中的位置
-│   │   ├── Prompt/                    指令设计、Few-shot、结构化输出、Prompt Injection
-│   │   ├── Context/                   上下文窗口、Context Engineering、Memory
-│   │   ├── RAG/                       切分、向量库、检索、Rerank、Citation
-│   │   ├── Agent/                     工具调用、规划、状态、反思、多智能体
-│   │   ├── Frameworks/                LangChain、LangGraph、OpenAI Agents SDK、DSPy
-│   │   ├── Vibe-Coding/              Claude Code、Codex CLI、人机协作工作流
-│   │   ├── MCP/                       模型上下文协议：Server/Client/Tool Schema/Permission
-│   │   ├── Evaluation/                评估框架、Golden Set、LLM-as-Judge、回归测试
-│   │   ├── Fine-tuning/              SFT、LoRA、PEFT、数据集、过拟合
-│   │   └── Inference/                 API 模型、本地模型、量化、推理服务部署
-│   │
-│   ├── web3-fundamentals/            ← 模块二：Web3 基础（10 节）
-│   │   ├── Cryptography/              Hash、公私钥、签名、Merkle Tree
-│   │   ├── Wallet/                    EOA、助记词、交易三层权限、Gas
-│   │   ├── Smart-Contract/            Solidity、EVM、ABI、Event、升级
-│   │   ├── Dev-Stack/                 Remix、Hardhat、Foundry、OpenZeppelin、viem/wagmi
-│   │   ├── Network/                   区块、共识、PoS、测试网、L2、Rollup
-│   │   ├── Account-Abstraction/       ERC-4337、Smart Account、Bundler、Paymaster、Session Key
-│   │   ├── DeFi/                      Token、AMM、借贷、稳定币、流动性
-│   │   ├── Oracle/                    Price Feed、Data Feed、Oracle 风险
-│   │   ├── Indexing/                  Event 索引、Subgraph、RPC、数据管道
-│   │   └── Security/                  重入、权限控制、审计、模拟、监控
-│   │
-│   ├── ai-web3-bridge/              ← 模块三：AI × Web3 交叉（15 节）
-│   │   ├── Chain-aware-Context/       链上数据如何进入 AI 上下文（带 citation + 时间戳）
-│   │   ├── Web3-Tool-Use/            RPC/读/写工具分离、权限、日志
-│   │   ├── Agent-Workflow/           任务图、状态机、Human-in-the-loop、Trace
-│   │   ├── Agent-Wallet/            AA 钱包、Session Key、Policy、Guard、模拟、撤销
-│   │   ├── Machine-Payment/          预算、报价、Payment Intent、x402、订阅
-│   │   ├── Settlement-and-Escrow/    Escrow 状态机、收据、交付证明、争议仲裁
-│   │   ├── Agent-Identity/           Agent Profile、能力声明、DID/VC、注册表
-│   │   ├── Agent-Trust-and-Reputation/ 声誉、Attestation、Stake、Slashing
-│   │   ├── AI-Oracle/                AI 输出上链、Proof of Inference、争议机制
-│   │   ├── Verifiable-AI/            TEE、ZK、zkML、审计追踪、按风险分层
-│   │   ├── AI-Security/              Prompt Injection 防护、工具滥用、权限隔离
-│   │   ├── AI-Privacy/               数据边界、本地 AI、最小披露
-│   │   ├── AI-Sovereignty/           用户控制、数据可迁移、d/acc、CROPS
-│   │   ├── Governance-AI/            提案摘要、来源可追溯、人保留决策权
-│   │   └── Decentralized-AI/         模型市场、算力市场、推理网络、结算
-│   │
-│   └── frontier/                     ← 模块四：前沿探索（6 节）
-│       ├── Agentic-Commerce/          购买意图结构化、预算分层、Escrow 闭环
-│       ├── Dev-Tooling/               文档→Agent、合约阅读、交易解释、测试生成
-│       ├── Wallet-and-Permission/     AI 钱包 UX、Permission Policy、Session Key 流程
-│       ├── AI-Security/               威胁模型、工具权限隔离、行为审计
-│       ├── Governance/                提案摘要器、会议→行动、预算检查、多元视角
-│       └── Open-Track/                AI-native Wallet、链上数据分析、跨赛道组合
+├── daily-log/                 ← 过程：每周一个文件夹，每天一个文件夹
+│   ├── __index__.md             整套规范和模板
+│   ├── week-1/                  Week 1: 建立共同语言
+│   │   ├── __index__.md           当周索引（每日打卡进度一目了然）
+│   │   ├── WEEK.md                当周完整目标和材料
+│   │   ├── 2026-05-17/            一天一个文件夹
+│   │   │   ├── __index__.md         当日概览 + 参考链接
+│   │   │   ├── 2026-05-17.md        学习笔记本体
+│   │   │   ├── TASK.md              任务、产出、交付证明
+│   │   │   └── assets/              截图和图片
+│   │   └── ...
+│   ├── week-2/                  交叉方向深入
+│   ├── week-3/                  Hackathon 启动
+│   └── week-4/                  集中开发 + 提交
 │
-└── hackathon/                        ← 【产出阶段】Hackathon 项目代码与演示
-    ├── contracts/                     智能合约源码（提交时附测试网 Tx Hash）
-    └── demo/                          Demo 演示材料（截图、视频、slides）
+├── hackathon/                 ← 输出：最终项目
+│   ├── contracts/               合约源码（提交时带上测试网 Tx Hash）
+│   └── demo/                    演示材料：截图、视频、slides
+│
+└── reference/                 ← 自己定的几条规矩，比如 commit 格式
+    └── git-commit-reference.md
 ```
 
-**逻辑：** `pre_study/` 是输入（知识储备）→ `daily-log/` 是过程（每日打卡与产出）→ `hackathon/` 是输出（最终交付）
+我自己用起来的逻辑就一句话：**`pre_study/` 是我带进营的弹药，`daily-log/` 是每天打仗的过程，`hackathon/` 是最后这场仗的成果。**
 
----
+## 我带进营的几个判断
 
-## 核心认知提炼
+把预习目录梳过一遍之后，有些东西已经不再是"知识点"，而是会影响我后面怎么做项目的工作假设。先写在这里，等真正深入每一节、做完 Hackathon 之后再回来修订。
 
-### AI 基础
+**关于 AI——**
 
-- 模型输出是候选结果，不是事实——越靠近执行层，越要把输出变成可验证对象
-- Prompt 是软约束，真正的边界由代码、权限、校验和审计承担
-- Agent 最危险的设计：同时拥有模糊目标 + 广泛工具 + 长期记忆 + 大额资产权限
-- MCP 解决"怎么接"，不解决"谁有权限接"
+模型输出永远是"候选答案"，不是事实。越靠近能改变世界的执行层（写文件、发交易、扣钱），越要把这种候选答案变成可被代码验证的对象。Prompt 是软约束，真正能拦住坏事的是代码、权限、校验、审计。
 
-### Web3 基础
+我现在最警惕的一种 Agent 设计是：模糊的目标 + 广泛的工具 + 长期记忆 + 直接动钱的权限。这四个凑齐了，几乎一定会出事。
 
-- 私钥是控制权本身，丢了无法找回，泄漏意味着失去一切
-- 钱包交互三层权限：连接（读地址）< 签名消息 < 发送交易（改变链上状态）
-- Session Key 是 Agent Wallet 的关键：可限制 + 可过期 + 可撤销
-- Web3 安全 = 权限最小化 + 执行前模拟 + 上线后监控
+**关于 Web3——**
 
-### AI × Web3 Bridge
+私钥就是控制权本身，丢了不能找回，泄漏就是裸奔。钱包交互三层权限——只读（连接地址）< 签名消息 < 发交易——很多人以为自己在做第一层，其实点了第三层。
 
-- Agent Wallet 不给主私钥，用 Session Key 给受限能力，自动化必须绑定撤销能力
-- 机器支付：预算先于执行，报价必须有有效期，付款后留收据
-- AI Oracle 结果要结构化，争议要提前设计，不能让模型直接替合约做判断
-- 可验证 AI 按风险分层；Audit Trail 是最容易落地的起点
-- 不可信输入无法直接变成不受限执行
+Session Key 在我看来是 Agent Wallet 的胜负手：**可限制 + 可过期 + 可撤销**——少一个都不够。
 
-### 前沿探索
+**关于交叉地带——**
 
-- Agentic Commerce = 购买意图结构化 + 预算分层 + 任务完成证明 + Escrow 状态机
-- Agent 不应该拥有"钱包"，只应该拥有可限制、可审计、可撤销的能力
-- AI 安全靠结构隔离，不靠"更聪明的 prompt"
-- 开放赛道评估三问：AI 不可替代什么？Web3 不可替代什么？两周内能做出可演示闭环吗？
+Agent 不应该拥有"钱包"，它应该只拥有一组**可限制、可审计、可撤销**的能力。把私钥扔给 Agent 是当代版本的 root 权限滥用。
 
----
+机器之间的支付，关键是预算先于执行、报价必须有有效期、付款后留下能验证交付的收据。这套东西链下做不干净，链上的 Escrow 状态机刚好补这个缺口。
 
-## Hackathon 方向建议
+可验证 AI 不必一上来就上 zkML，按风险分层就行。**Audit Trail 是最容易、也最先该落地的那层。**
 
-1. **Smart Account + Session Key**：让 AI Agent 安全地执行链上操作
-2. **Agentic Commerce 闭环**：智能体决策 → 链上执行 → DeFi 组合 → 故障恢复
-3. **AI-native Wallet**：重新设计钱包 UX，让确认有意义
-4. **On-chain Data Analysis Agent**：链上数据分析智能体
+## 我在考虑的 Hackathon 方向
 
-项目提交必须附**测试网 Tx Hash**，证明代码真正在链上跑过。
+Week 1-2 还在边学边筛，目前桌上的几个选项：
 
----
+1. **Smart Account + Session Key 让 Agent 安全干活**——给 AI 一把"只能在某段时间、某个金额内、做某类事"的钥匙
+2. **Agentic Commerce 闭环**——智能体从决策到链上执行到 DeFi 组合，再到出错时怎么回滚
+3. **AI-native Wallet**——重新设计钱包确认 UX，让用户每一次签名都真正知道自己在批准什么
+4. **链上数据分析 Agent**——把"看 Etherscan 看到累"这件事自动化
 
-## 关键链接
+不管最后选哪个，硬性要求都一样：**必须有测试网 Tx Hash**，证明它真的在链上跑过，不是 PPT 项目。
 
-| 资源 | 链接 |
+## 一些关键链接
+
+| 用途 | 链接 |
 |------|------|
-| 官网 | https://aiweb3.school/ |
-| 预习资料（中文） | https://aiweb3.school/zh/ |
-| WCB 平台 | https://web3career.build/zh/programs/AI-Web3-School?tab=apply |
-| Builder Profile | https://web3career.build/profile |
-| Telegram 群 | https://t.me/aiweb3school |
+| 营期官网 | <https://aiweb3.school/> |
+| 中文预习资料 | <https://aiweb3.school/zh/> |
+| WCB 任务平台 | <https://web3career.build/zh/programs/AI-Web3-School?tab=apply> |
+| Builder Profile | <https://web3career.build/profile> |
+| Telegram 学员群 | <https://t.me/aiweb3school> |
+
+## 合作生态（顺便记一笔）
+
+- **LI.FI** — 跨链执行、流动性聚合、Intent/Solver 架构。如果做 Agentic Commerce，他们的 SDK 应该是绕不开的入口。
+- **Waterdrip Capital** — 黑客松评审、资源对接、算力支持。值得在 Demo 阶段争取真实的反馈。
 
 ---
 
-## 合作生态
-
-- **LI.FI**：跨链执行、流动性聚合、Intent/Solver 架构、Agentic Commerce
-- **Waterdrip Capital**：黑客松评审、资源对接、算力支持、项目孵化
+> 如果你顺着 git log 翻到这里——欢迎，这是我的实验现场，乱归乱，但每一个 commit 都是真的。
