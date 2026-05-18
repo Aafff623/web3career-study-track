@@ -8,7 +8,9 @@
 
 ## 仓库结构
 
-- `daily-log/YYYY-MM-DD/` — 每日学习记录（笔记 + 任务 + 资源）
+- `daily-log/week-N/YYYY-MM-DD/` — 每日学习记录（笔记 + 任务 + 资源）；按周→日两层组织
+- `daily-log/week-N/WEEK.md` — 当周完整目标、任务和推荐材料
+- `daily-log/week-N/__index__.md` — 当周概览与每日索引
 - `pre_study/` — 预习阶段 42 节知识笔记
 - `hackathon/` — Hackathon 项目代码与演示
 - `reference/` — 规范文件
@@ -17,8 +19,9 @@
 
 ### 文件操作
 
-- 每日记录放 `daily-log/对应日期/` 下，不要跨天合并
+- 每日记录放 `daily-log/week-N/对应日期/` 下，不要跨天合并
 - 笔记写在 `YYYY-MM-DD.md`，任务写在 `TASK.md`，索引和链接写在 `__index__.md`
+- 周级目标和任务写在 `daily-log/week-N/WEEK.md`，周级索引写在 `daily-log/week-N/__index__.md`
 - 图片放 `assets/` 文件夹，用相对路径引用
 - 预习笔记按模块放对应子文件夹，每个主题一个文件夹
 
