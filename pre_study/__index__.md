@@ -78,12 +78,12 @@ pre_study/<module>/<Topic>/README.md
 
 | 状态 | 主题 | 笔记 | 一句话定位 |
 |------|------|------|-----------|
-| ⚪ | LLM | [📝](./ai-fundamentals/LLM/README.md) | Token、Embedding、幻觉、模型在系统中的位置 |
-| ⚪ | Prompt | [📝](./ai-fundamentals/Prompt/README.md) | 指令设计、Few-shot、结构化输出、Prompt Injection |
-| ⚪ | Context | [📝](./ai-fundamentals/Context/README.md) | 上下文窗口、Context Engineering、Memory |
-| ⚪ | RAG | [📝](./ai-fundamentals/RAG/README.md) | 切分、向量库、检索、Rerank、Citation |
-| ⚪ | Agent | [📝](./ai-fundamentals/Agent/README.md) | 工具调用、规划、状态、反思、多智能体 |
-| ⚪ | Frameworks | [📝](./ai-fundamentals/Frameworks/README.md) | LangChain、LangGraph、OpenAI Agents SDK、DSPy |
+| 🟡 | LLM | [📝](./ai-fundamentals/LLM/README.md) | Token、Embedding、幻觉、模型在系统中的位置 |
+| 🟡 | Prompt | [📝](./ai-fundamentals/Prompt/README.md) | 指令设计、Few-shot、结构化输出、Prompt Injection |
+| 🟡 | Context | [📝](./ai-fundamentals/Context/README.md) | 上下文窗口、Context Engineering、Memory |
+| 🟡 | RAG | [📝](./ai-fundamentals/RAG/README.md) | 切分、向量库、检索、Rerank、Citation |
+| 🟡 | Agent | [📝](./ai-fundamentals/Agent/README.md) | 工具调用、规划、状态、反思、多智能体 |
+| 🟡 | Frameworks | [📝](./ai-fundamentals/Frameworks/README.md) | LangChain、LangGraph、OpenAI Agents SDK、DSPy |
 | ⚪ | Vibe-Coding | [📝](./ai-fundamentals/Vibe-Coding/README.md) | Claude Code、Codex CLI、人机协作工作流 |
 | ⚪ | MCP | [📝](./ai-fundamentals/MCP/README.md) | Server / Client / Tool Schema / Permission |
 | ⚪ | Evaluation | [📝](./ai-fundamentals/Evaluation/README.md) | 评估框架、Golden Set、LLM-as-Judge、回归测试 |
