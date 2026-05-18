@@ -70,6 +70,13 @@ web3career-study-track/
 │   ├── contracts/               合约源码（提交时带上测试网 Tx Hash）
 │   └── demo/                    演示材料：截图、视频、slides
 │
+├── idea/                      ← 实验：可复用 skill 原型 + 迭代参考
+│   ├── skills/                  正式 skill（SKILL.md 格式）
+│   │   ├── pre-study-note/      预习笔记整理
+│   │   └── daily-log-sync/      每日日志同步
+│   ├── reference/               经典案例 + 进化规范
+│   └── workflows/               可固化的 workflow 模式
+│
 └── reference/                 ← 自己定的几条规矩，比如 commit 格式
     └── git-commit-reference.md
 ```
