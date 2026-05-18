@@ -73,7 +73,8 @@ web3career-study-track/
 ├── idea/                      ← 实验：可复用 skill 原型 + 迭代参考
 │   ├── skills/                  正式 skill（SKILL.md 格式）
 │   │   ├── pre-study-note/      预习笔记整理
-│   │   └── daily-log-sync/      每日日志同步
+│   │   ├── daily-log-sync/      每日日志同步
+│   │   └── cascade-maintain/    链式维护
 │   ├── reference/               经典案例 + 进化规范
 │   └── workflows/               可固化的 workflow 模式
 │

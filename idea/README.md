@@ -13,7 +13,8 @@ idea/
 ├── README.md              # 本文件
 ├── skills/                # 可复用的 skill（SKILL.md 格式）
 │   ├── pre-study-note/    # 预习笔记整理
-│   └── daily-log-sync/    # 每日日志同步
+│   ├── daily-log-sync/    # 每日日志同步
+│   └── cascade-maintain/  # 链式维护（变更传播自动检测）
 ├── reference/             # 参考资料
 │   ├── case/              # 经典案例（输入→输出对照）
 │   └── eval/              # 进化规范（评估标准、断言、评分）
