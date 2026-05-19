@@ -1,7 +1,8 @@
 <p align="center">
   <h1 align="center">AI Web3 School · Study Track</h1>
-  <p align="center"><strong>4 周共学营 + 黑客松，从 AI × Web3 学习到测试网 MVP 的全链路记录</strong></p>
+  <p align="center"><strong>记录本学期参与的AI Web3 共学营 + 黑客松，从学习基础到产出 MVP 的全链路记录</strong></p>
 </p>
+
 
 <p align="center">
   <img src="assets/banner.png" alt="AI Web3 School Banner" width="100%">
@@ -22,10 +23,10 @@
 
 ## ✨ Highlights
 
-- **预习笔记 21/42** — `AI 基础` 11 节 + `Web3 基础` 10 节已完成，每节含 *原文批注* + *实践练习*
-- **Agent 驱动** — `Claude Code` / `Kiro` 双工具接入，3 个自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`）
-- **全链路记录** — `pre_study` → `daily-log` → `hackathon`，不是笔记仓库而是 **proof-of-work workspace**
-- **链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*，**不接受 PPT 项目**
+- **pre study note:  21/42** — `AI Fundamentdals` 11 节 + `Web3 Fundamentals`  + `AI-Web3-Bridge`10 节已完成，每哥主题文件夹包含: README.md(该原文的介绍+人工批注) + Theme-exercise.md(主题练习的demo) 
+- **Agent 驱动** — `Claude Code` / `Kiro` / other `Agent` 工具接入进行驱动，3 个在实践过程中自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`）
+- **全链路记录** — `pre_study` → `daily-log` → `hackathon`，即是笔记仓库也是 **proof-of-work workspace**
+- **链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*, PPT 演示可附带
 
 ### 排期
 
@@ -52,19 +53,19 @@ gantt
     最终提交                :milestone, m2, 2026-06-14, 0d
 ```
 
-## 🌱 起源
+## 🌱 origin (起源)
 
-> *AI 圈子里很多人不知道 Session Key 是啥。Web3 圈子里很多人觉得 Agent 只是"接个 API 而已"。*
+> *先前从最初的 SDE 到泡在 AI  Coding圈子里, 叙事框架在 Web2 下, 不清楚 Web3 的生态, 范式, 体系, 了解到该共学营和黑客松的赛事培养安排, 有想法将 之前 AI Coding 的方法论和工作流投入到该repo中, 并持续产出迭代"。*
 
-*授权、签名、不可伪造的执行记录、可撤销的能力*——这些恰好是 Web3 这十年攒下来的基础设施在做的事。而 **AI 正在把这些能力接入自动化流程**。
+对 *授权、签名、不可伪造的执行记录、可撤销的能力*——这些恰好是 Web3 这十年攒下来的基础核心设施在做的事。可以用 **AI 正在把这些能力接入自动化流程**, 整个探索的过程还是很吸引并值得参与的
 
-我想花 4 周投入在这个*交叉地带*，把两套语言学到能互译，最后做出一个能在测试网上跑起来的 MVP。这个仓库就是这个过程的复现。
+这个*交叉*  的 AI Web3 地带，把两套语言学到能互译，互通, 在交接带中最后打磨成一个能在测试网上跑起来的 MVP, 展示出一些实用的价值即满足, 这个仓库就是这个过程的基础学习记录 和 思考火花。
 
-## 📊 当前进度
+## 📊 progress
 
-> 最后更新：2026-05-19 · Week 1 · Day 3
+> (维护时间) / 最后更新：2026-05-19 · Week 1 · Day 3
 
-### 预习笔记
+### pre-study note (预习笔记)
 
 | 模块 | 进度 | 状态 |
 |------|------|------|
@@ -74,7 +75,9 @@ gantt
 | 前沿探索 | 0 / 6 | ⚪ 未开始 |
 | **合计** | **21 / 42 (50%)** | |
 
-### 项目阶段
+### timeline (时间线)
+
+活动安排: 
 
 ```mermaid
 flowchart LR
@@ -92,7 +95,9 @@ flowchart LR
     style F fill:#EF4444,color:#fff
 ```
 
-### 每日打卡
+### everyday-task (每日任务)
+
+记录每日核心产出
 
 | 日期 | 状态 | 主要产出 |
 |------|:---:|---------|
@@ -100,7 +105,13 @@ flowchart LR
 | 05-18 (Day 2) | ✅ | `ai-fundamentals/` 11 节 + 两场直播笔记 + 规范架构 |
 | 05-19 (Day 3) | ✅ | `web3-fundamentals/` 10 节 + Case/Eval 归档 |
 
-## 📂 仓库结构
+## 📂 repo-structure
+
+pre-study: 学习基础知识
+
+daily-log: 记录每日所得
+
+hackathon: 记录` MVP / project `产出
 
 ```
 输入 ──────────────── 过程 ──────────────── 输出
@@ -116,7 +127,7 @@ pre_study/              daily-log/              hackathon/
     (6 节 ⚪)
 ```
 
-**一句话逻辑**：`pre_study/` 是我带进营的弹药 🎒，`daily-log/` 是每天打仗的过程 ⚔️，`hackathon/` 是最后这场仗的成果 🏆。
+
 
 <details>
 <summary>完整目录树（点击展开）</summary>
@@ -169,9 +180,9 @@ web3career-study-track/
 
 </details>
 
-## ⚙️ 工作流
+## ⚙️ workflow (工作流)
 
-### 每日循环
+### loop (每日循环)
 
 ```mermaid
 flowchart LR
@@ -187,7 +198,7 @@ flowchart LR
     style E fill:#EF4444,color:#fff
 ```
 
-### 预习笔记流程
+###  /cascade-maintain (自定义 Agent 维护 级联索引文件的 skill) 
 
 ```mermaid
 flowchart TD
@@ -207,7 +218,7 @@ flowchart TD
     style G fill:#EF4444,color:#fff
 ```
 
-### 技术栈
+### layer (分层)
 
 ```mermaid
 flowchart TD
@@ -244,7 +255,7 @@ flowchart TD
     style P3 fill:#10B981,color:#fff
 ```
 
-## 💡 我带进营的几个判断
+## 💡 judge (判断)
 
 > **🤖 关于 AI** — 模型输出永远是 *"候选答案"*，不是事实。越靠近执行层，越要把候选答案变成**可被代码验证的对象**。最警惕的 Agent 设计：`模糊目标 + 广泛工具 + 长期记忆 + 直接动钱`。
 
@@ -265,7 +276,7 @@ flowchart TD
 
 硬性要求：**必须有测试网 Tx Hash**，*不接受 PPT 项目*。
 
-## 🔗 关键链接
+## 🔗 link (关键链接)
 
 | 用途 | 链接 |
 |------|------|
@@ -275,7 +286,7 @@ flowchart TD
 | 👤 Builder Profile | <https://web3career.build/profile> |
 | 💬 Telegram 学员群 | <https://t.me/aiweb3school> |
 
-## 🤝 合作生态
+## 🤝 cowork (合作生态)
 
 > **🔗 LI.FI** — 跨链执行、流动性聚合、`Intent/Solver` 架构。做 *Agentic Commerce* 的 SDK 入口。
 
