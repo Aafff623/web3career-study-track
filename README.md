@@ -15,27 +15,52 @@
 </p>
 
 <p align="center">
-  <a href="#当前进度">当前进度</a> · <a href="#仓库结构">仓库结构</a> · <a href="#工作流">工作流</a> · <a href="#hackathon-方向">Hackathon</a> · <a href="#关键链接">关键链接</a>
+  <a href="#-highlights">Highlights</a> · <a href="#-当前进度">当前进度</a> · <a href="#-仓库结构">仓库结构</a> · <a href="#️-工作流">工作流</a> · <a href="#-hackathon-方向">Hackathon</a> · <a href="#-关键链接">关键链接</a>
 </p>
 
 ---
 
-## Highlights
+## ✨ Highlights
 
-- **预习笔记 21/42** — AI 基础 11 节 + Web3 基础 10 节已完成，每节含原文批注 + 实践练习
-- **Agent 驱动** — Claude Code / Kiro 双工具接入，3 个自定义 Skill（链式维护 / 日志同步 / 笔记整理）
-- **全链路记录** — 预习 → 每日打卡 → Co-Learning → Hackathon，不是笔记仓库而是 proof-of-work workspace
-- **链上证明** — Hackathon 提交必须附测试网 Tx Hash，不接受 PPT 项目
+- **预习笔记 21/42** — `AI 基础` 11 节 + `Web3 基础` 10 节已完成，每节含 *原文批注* + *实践练习*
+- **Agent 驱动** — `Claude Code` / `Kiro` 双工具接入，3 个自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`）
+- **全链路记录** — `pre_study` → `daily-log` → `hackathon`，不是笔记仓库而是 **proof-of-work workspace**
+- **链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*，**不接受 PPT 项目**
 
-## 起源
+### 排期
 
-> AI 圈子里很多人不知道 Session Key 是啥。Web3 圈子里很多人觉得 Agent 只是"接个 API 而已"。
+```mermaid
+gantt
+    title AI Web3 School · 4 周排期
+    dateFormat YYYY-MM-DD
+    axisFormat %m/%d
 
-授权、签名、不可伪造的执行记录、可撤销的能力——这些恰好是 Web3 这十年攒下来的基础设施在做的事。而 AI 正在把这些能力接入自动化流程。
+    section 预习
+    AI 基础 11 节           :done, pre1, 2026-05-12, 2026-05-18
+    Web3 基础 10 节         :done, pre2, 2026-05-12, 2026-05-19
+    AI × Web3 交叉 15 节    :active, pre3, 2026-05-20, 2026-05-30
+    前沿探索 6 节           :pre4, 2026-05-25, 2026-06-01
 
-我想花 4 周投入在这个交叉地带，把两套语言学到能互译，最后做出一个能在测试网上跑起来的 MVP。这个仓库就是这个过程的复现。
+    section 共学
+    Week 1 建立共同语言      :done, w1, 2026-05-17, 2026-05-23
+    Week 2 交叉方向深入      :active, w2, 2026-05-24, 2026-05-30
 
-## 当前进度
+    section Hackathon
+    确定方向                :milestone, m1, 2026-05-30, 0d
+    Week 3 核心开发          :h1, 2026-05-31, 2026-06-06
+    Week 4 部署 + 提交       :h2, 2026-06-07, 2026-06-14
+    最终提交                :milestone, m2, 2026-06-14, 0d
+```
+
+## 🌱 起源
+
+> *AI 圈子里很多人不知道 Session Key 是啥。Web3 圈子里很多人觉得 Agent 只是"接个 API 而已"。*
+
+*授权、签名、不可伪造的执行记录、可撤销的能力*——这些恰好是 Web3 这十年攒下来的基础设施在做的事。而 **AI 正在把这些能力接入自动化流程**。
+
+我想花 4 周投入在这个*交叉地带*，把两套语言学到能互译，最后做出一个能在测试网上跑起来的 MVP。这个仓库就是这个过程的复现。
+
+## 📊 当前进度
 
 > 最后更新：2026-05-19 · Week 1 · Day 3
 
@@ -49,15 +74,33 @@
 | 前沿探索 | 0 / 6 | ⚪ 未开始 |
 | **合计** | **21 / 42 (50%)** | |
 
+### 项目阶段
+
+```mermaid
+flowchart LR
+    A["📚 预习阶段\n(05/12 - 05/16)"] --> B["🟢 Week 1\n建立共同语言\n(05/17 - 05/23)"]
+    B --> C["🟡 Week 2\n交叉方向深入\n(05/24 - 05/30)"]
+    C --> D{"🏆 确定\nHackathon\n方向"}
+    D --> E["🔥 Week 3\n核心开发\n(05/31 - 06/06)"]
+    E --> F["🚀 Week 4\n部署 + 提交\n(06/07 - 06/14)"]
+
+    style A fill:#6C3CE1,color:#fff
+    style B fill:#10B981,color:#fff
+    style C fill:#F59E0B,color:#000
+    style D fill:#EF4444,color:#fff
+    style E fill:#3B82F6,color:#fff
+    style F fill:#EF4444,color:#fff
+```
+
 ### 每日打卡
 
 | 日期 | 状态 | 主要产出 |
 |------|:---:|---------|
 | 05-17 (Day 1) | ✅ | 开营仪式整理精要 |
-| 05-18 (Day 2) | ✅ | AI 基础 11 节 + 两场直播笔记 + 规范架构 |
-| 05-19 (Day 3) | ✅ | Web3 基础 10 节 + Case/Eval 归档 |
+| 05-18 (Day 2) | ✅ | `ai-fundamentals/` 11 节 + 两场直播笔记 + 规范架构 |
+| 05-19 (Day 3) | ✅ | `web3-fundamentals/` 10 节 + Case/Eval 归档 |
 
-## 仓库结构
+## 📂 仓库结构
 
 ```
 输入 ──────────────── 过程 ──────────────── 输出
@@ -73,7 +116,7 @@ pre_study/              daily-log/              hackathon/
     (6 节 ⚪)
 ```
 
-**一句话逻辑**：`pre_study/` 是我带进营的弹药，`daily-log/` 是每天打仗的过程，`hackathon/` 是最后这场仗的成果。
+**一句话逻辑**：`pre_study/` 是我带进营的弹药 🎒，`daily-log/` 是每天打仗的过程 ⚔️，`hackathon/` 是最后这场仗的成果 🏆。
 
 <details>
 <summary>完整目录树（点击展开）</summary>
@@ -126,66 +169,114 @@ web3career-study-track/
 
 </details>
 
-## 工作流
+## ⚙️ 工作流
 
-```
-每天的循环：
+### 每日循环
 
-  ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
-  │ 听课/直播 │───→│ Co-Learn │───→│ 当日任务  │───→│ 写笔记   │
-  └──────────┘    └──────────┘    └──────────┘    └────┬─────┘
-                                                       │
-                                                       ▼
-                                                ┌──────────┐
-                                                │  commit   │
-                                                └──────────┘
+```mermaid
+flowchart LR
+    A["🎧 听课/直播"] --> B["💬 Co-Learn"]
+    B --> C["📋 当日任务"]
+    C --> D["✍️ 写笔记"]
+    D --> E["📦 commit"]
+
+    style A fill:#6C3CE1,color:#fff
+    style B fill:#3B82F6,color:#fff
+    style C fill:#F59E0B,color:#000
+    style D fill:#10B981,color:#fff
+    style E fill:#EF4444,color:#fff
 ```
 
 ### 预习笔记流程
 
+```mermaid
+flowchart TD
+    A["📖 Handbook 原文"] --> B["🤖 pre-study-note skill"]
+    B --> C["📝 原文 + 批注笔记"]
+    C --> D["🔗 cascade-maintain"]
+    D --> E["📊 __index__"]
+    D --> F["📅 daily-log"]
+    D --> G["🧠 memory"]
+
+    style A fill:#6C3CE1,color:#fff
+    style B fill:#3B82F6,color:#fff
+    style C fill:#10B981,color:#fff
+    style D fill:#F59E0B,color:#000
+    style E fill:#EF4444,color:#fff
+    style F fill:#EF4444,color:#fff
+    style G fill:#EF4444,color:#fff
 ```
-Handbook 原文 ──→ pre-study-note skill ──→ 原文 + 批注笔记
-                                              │
-                                              ▼
-                                    级联维护（cascade-maintain）
-                                              │
-                                    ┌─────────┼─────────┐
-                                    ▼         ▼         ▼
-                              __index__   daily-log   memory
+
+### 技术栈
+
+```mermaid
+flowchart TD
+    subgraph 工具层
+        CC["🤖 Claude Code"]
+        KR["⚡ Kiro"]
+    end
+
+    subgraph Skill 层
+        S1["🔗 cascade-maintain"]
+        S2["📅 daily-log-sync"]
+        S3["📝 pre-study-note"]
+    end
+
+    subgraph 产出层
+        P1["📊 pre_study/"]
+        P2["📋 daily-log/"]
+        P3["🏆 hackathon/"]
+    end
+
+    CC --> S1 & S2 & S3
+    KR --> S1 & S2 & S3
+    S1 --> P1 & P2
+    S2 --> P2
+    S3 --> P1
+
+    style CC fill:#6C3CE1,color:#fff
+    style KR fill:#3B82F6,color:#fff
+    style S1 fill:#F59E0B,color:#000
+    style S2 fill:#F59E0B,color:#000
+    style S3 fill:#F59E0B,color:#000
+    style P1 fill:#10B981,color:#fff
+    style P2 fill:#10B981,color:#fff
+    style P3 fill:#10B981,color:#fff
 ```
 
-## 我带进营的几个判断
+## 💡 我带进营的几个判断
 
-**关于 AI** — 模型输出永远是"候选答案"，不是事实。越靠近执行层，越要把候选答案变成可被代码验证的对象。最警惕的 Agent 设计：模糊目标 + 广泛工具 + 长期记忆 + 直接动钱。
+> **🤖 关于 AI** — 模型输出永远是 *"候选答案"*，不是事实。越靠近执行层，越要把候选答案变成**可被代码验证的对象**。最警惕的 Agent 设计：`模糊目标 + 广泛工具 + 长期记忆 + 直接动钱`。
 
-**关于 Web3** — 私钥就是控制权本身。钱包交互三层权限——只读 < 签名 < 发交易——很多人以为自己在做第一层，其实点了第三层。Session Key 是 Agent Wallet 的胜负手：**可限制 + 可过期 + 可撤销**。
+> **⛓️ 关于 Web3** — 私钥就是控制权本身。钱包交互三层权限——*只读 < 签名 < 发交易*——很多人以为自己在做第一层，其实点了第三层。Session Key 是 Agent Wallet 的胜负手：**可限制 + 可过期 + 可撤销**。
 
-**关于交叉地带** — Agent 不应该拥有"钱包"，它应该只拥有**可限制、可审计、可撤销**的能力。把私钥扔给 Agent 是 root 权限滥用。Audit Trail 是最容易也最先该落地的可验证层。
+> **🔀 关于交叉地带** — Agent 不应该拥有"钱包"，它应该只拥有 **可限制、可审计、可撤销** 的能力。把私钥扔给 Agent 是 `root 权限滥用`。*Audit Trail* 是最容易也最先该落地的可验证层。
 
-## Hackathon 方向
+## 🏆 Hackathon 方向
 
 > Week 1-2 边学边筛，Week 2 结束前确定
 
 | # | 方向 | 一句话 |
 |---|------|--------|
-| 1 | Smart Account + Session Key | 给 AI 一把"只能在某段时间、某个金额内、做某类事"的钥匙 |
-| 2 | Agentic Commerce 闭环 | 智能体决策→链上执行→DeFi 组合→出错回滚 |
-| 3 | AI-native Wallet | 重新设计钱包确认 UX，让用户每次签名都知道在批准什么 |
-| 4 | 链上数据分析 Agent | 把"看 Etherscan 看到累"这件事自动化 |
+| 1 | 🔑 Smart Account + Session Key | 给 AI 一把 *"只能在某段时间、某个金额内、做某类事"* 的钥匙 |
+| 2 | 🔄 Agentic Commerce 闭环 | 智能体决策 → 链上执行 → DeFi 组合 → 出错回滚 |
+| 3 | 💳 AI-native Wallet | 重新设计钱包确认 UX，让用户每次签名都知道在*批准什么* |
+| 4 | 📈 链上数据分析 Agent | 把 *"看 Etherscan 看到累"* 这件事自动化 |
 
-硬性要求：**必须有测试网 Tx Hash**，不接受 PPT 项目。
+硬性要求：**必须有测试网 Tx Hash**，*不接受 PPT 项目*。
 
-## 关键链接
+## 🔗 关键链接
 
 | 用途 | 链接 |
 |------|------|
-| 营期官网 | <https://aiweb3.school/> |
-| 中文预习资料 | <https://aiweb3.school/zh/> |
-| WCB 任务平台 | <https://web3career.build/zh/programs/AI-Web3-School?tab=apply> |
-| Builder Profile | <https://web3career.build/profile> |
-| Telegram 学员群 | <https://t.me/aiweb3school> |
+| 🌐 营期官网 | <https://aiweb3.school/> |
+| 📚 中文预习资料 | <https://aiweb3.school/zh/> |
+| 📋 WCB 任务平台 | <https://web3career.build/zh/programs/AI-Web3-School?tab=apply> |
+| 👤 Builder Profile | <https://web3career.build/profile> |
+| 💬 Telegram 学员群 | <https://t.me/aiweb3school> |
 
-## 合作生态
+## 🤝 合作生态
 
-- **LI.FI** — 跨链执行、流动性聚合、Intent/Solver 架构。做 Agentic Commerce 的 SDK 入口。
-- **Waterdrip Capital** — 黑客松评审、资源对接、算力支持。Demo 阶段争取真实反馈。
+> **🔗 LI.FI** — 跨链执行、流动性聚合、`Intent/Solver` 架构。做 *Agentic Commerce* 的 SDK 入口。
+
+> **💧 Waterdrip Capital** — 黑客松评审、资源对接、算力支持。Demo 阶段争取*真实反馈*。
