@@ -34,6 +34,37 @@
 
 每天的循环大致是：**听课/分享会 → Co-Learning 讨论 → 当日任务 → 写笔记 → commit**。
 
+## 当前进度
+
+> 最后更新：2026-05-19 · Week 1 · Day 3
+
+### 预习笔记
+
+| 模块 | 进度 | 状态 |
+|------|------|------|
+| AI 基础 | 11 / 11 | ✅ 全部完成 |
+| Web3 基础 | 0 / 10 | ⚪ 未开始 |
+| AI × Web3 交叉 | 0 / 15 | ⚪ 未开始 |
+| 前沿探索 | 0 / 6 | ⚪ 未开始 |
+| **合计** | **11 / 42 (26%)** | |
+
+### 每日打卡
+
+| 日期 | 状态 | 主要产出 |
+|------|------|---------|
+| 05-17 (Day 1) | ✅ | 开营仪式整理精要 |
+| 05-18 (Day 2) | ✅ | AI 基础 11 节 + 两场直播笔记 + 规范架构 |
+| 05-19 (Day 3) | ⏳ | 今日进行中 |
+
+### 本周目标（Week 1: 05/17 — 05/23）
+
+- 建立 AI × Web3 共同语言
+- 完成预习笔记 Web3 基础模块
+- 每日打卡不断档
+- Hackathon 方向初步筛选
+
+---
+
 ## 仓库怎么组织
 
 我把仓库刻意做成了"输入 → 过程 → 输出"三层：
@@ -45,6 +76,18 @@ web3career-study-track/
 ├── GUIDE.md                   ← 项目通用规范（Claude Code / Kiro 等工具共用）
 ├── CLAUDE.md                  ← Claude Code 专用行为指引
 ├── steering.md                ← Kiro 专用方向与决策指引
+│
+├── .kiro/                     ← Kiro 配置（skill 规范）
+│   └── skills/                  3 个 skill 规范，与 idea/skills/ 对齐
+│       ├── cascade-maintain/    链式维护
+│       ├── daily-log-sync/      每日日志同步
+│       └── pre-study-note/      预习笔记整理
+│
+├── .claude/                   ← Claude Code 配置（skill 注册）
+│   └── skills/                  3 个 skill，项目级注册位
+│       ├── cascade-maintain/
+│       ├── daily-log-sync/
+│       └── pre-study-note/
 │
 ├── pre_study/                 ← 输入：42 节预习目录（随营期推进逐节填充）
 │   ├── __index__.md             42 节总目录 + 每节状态（⚪ / 🟡 / ✅）
