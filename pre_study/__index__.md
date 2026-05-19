@@ -94,16 +94,16 @@ pre_study/<module>/<Topic>/README.md
 
 | 状态 | 主题 | 笔记 | 一句话定位 |
 |------|------|------|-----------|
-| ⚪ | Cryptography | [📝](./web3-fundamentals/Cryptography/README.md) | Hash、公私钥、签名、Merkle Tree |
-| ⚪ | Wallet | [📝](./web3-fundamentals/Wallet/README.md) | EOA、助记词、交易三层权限、Gas |
-| ⚪ | Smart-Contract | [📝](./web3-fundamentals/Smart-Contract/README.md) | Solidity、EVM、ABI、Event、升级 |
-| ⚪ | Dev-Stack | [📝](./web3-fundamentals/Dev-Stack/README.md) | Remix、Hardhat、Foundry、OpenZeppelin、viem / wagmi |
-| ⚪ | Network | [📝](./web3-fundamentals/Network/README.md) | 区块、共识、PoS、测试网、L2、Rollup |
-| ⚪ | Account-Abstraction | [📝](./web3-fundamentals/Account-Abstraction/README.md) | ERC-4337、Smart Account、Bundler、Paymaster、Session Key |
-| ⚪ | DeFi | [📝](./web3-fundamentals/DeFi/README.md) | Token、AMM、借贷、稳定币、流动性 |
-| ⚪ | Oracle | [📝](./web3-fundamentals/Oracle/README.md) | Price Feed、Data Feed、Oracle 风险 |
-| ⚪ | Indexing | [📝](./web3-fundamentals/Indexing/README.md) | Event 索引、Subgraph、RPC、数据管道 |
-| ⚪ | Security | [📝](./web3-fundamentals/Security/README.md) | 重入、权限控制、审计、模拟、监控 |
+| ✅ | Cryptography | [📝](./web3-fundamentals/Cryptography/README.md) | Hash、公私钥、签名、Merkle Tree |
+| ✅ | Wallet | [📝](./web3-fundamentals/Wallet/README.md) | EOA、助记词、交易三层权限、Gas |
+| ✅ | Smart-Contract | [📝](./web3-fundamentals/Smart-Contract/README.md) | Solidity、EVM、ABI、Event、升级 |
+| ✅ | Dev-Stack | [📝](./web3-fundamentals/Dev-Stack/README.md) | Remix、Hardhat、Foundry、OpenZeppelin、viem / wagmi |
+| 🟢 | Network | [📝](./web3-fundamentals/Network/README.md) | 区块、共识、PoS、测试网、L2、Rollup |
+| 🟢 | Account-Abstraction | [📝](./web3-fundamentals/Account-Abstraction/README.md) | ERC-4337、Smart Account、Bundler、Paymaster、Session Key |
+| ✅ | DeFi | [📝](./web3-fundamentals/DeFi/README.md) | Token、AMM、借贷、稳定币、流动性 |
+| ✅ | Oracle | [📝](./web3-fundamentals/Oracle/README.md) | Price Feed、Data Feed、Oracle 风险 |
+| ✅ | Indexing | [📝](./web3-fundamentals/Indexing/README.md) | Event 索引、Subgraph、RPC、数据管道 |
+| ✅ | Security | [📝](./web3-fundamentals/Security/README.md) | 重入、权限控制、审计、模拟、监控 |
 
 ### 模块三 · AI × Web3 交叉（15 节）
 
@@ -141,10 +141,10 @@ pre_study/<module>/<Topic>/README.md
 | 模块 | 已完成 / 总数 |
 |------|--------------|
 | AI 基础 | 11 / 11 |
-| Web3 基础 | 0 / 10 |
+| Web3 基础 | 10 / 10 |
 | AI × Web3 交叉 | 0 / 15 |
 | 前沿探索 | 0 / 6 |
-| **合计** | **11 / 42** |
+| **合计** | **21 / 42** |
 
 > 每完成一节 Agent 就回到这里更新 并且 维护 对应行的状态和总进度数字, 在通过人工的review微调, 进行 commit & push
 
