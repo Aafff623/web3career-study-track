@@ -1,7 +1,8 @@
 <p align="center">
   <h1 align="center">AI Web3 School · Study Track</h1>
-  <p align="center"><strong>记录本学期参与的AI Web3 共学营 + 黑客松，从学习基础到产出 MVP 的全链路记录</strong></p>
+  <p align="center"><strong>记录本人在大二下学期参与的 `AI Web3` 共学营&黑客松活动, 包括不限于AI Web3 领域的核心基础知识, AI Coding的规范产出, 黑客松项目的 MVP 的全链路 track </strong></p>
 </p>
+
 
 
 <p align="center">
@@ -21,14 +22,16 @@
 
 ---
 
-## ✨ Highlights
+## ✨ Highlights (亮点聚焦)
 
-- **pre study note:  42/42** — `AI Fundamentdals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节 + `Frontier` 6 节全部完成，每个主题文件夹包含: README.md(该原文的介绍+人工批注) + Theme-exercise.md(主题练习的demo)
-- **Agent 驱动** — `Claude Code` / `Kiro` / other `Agent` 工具接入进行驱动，3 个在实践过程中自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`）
-- **全链路记录** — `pre_study` → `daily-log` → `hackathon`，即是笔记仓库也是 **proof-of-work workspace**
-- **链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*, PPT 演示可附带
+- **pre study note:  42/42** — 官网 handbook 中的 `AI Fundamentdals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节 + `Frontier` 6 节已经全部学习完成，每个主题(theme)文件夹包含: README.md(该原文的引用 + 人工阅读批注) + Theme-exercise.md(主题练习的demo)
+- **Agent 驱动** — 项目的索引以及规范维护交付给 `Claude Code` / `Kiro` / other `Agent` 工具接入进行系统化驱动，并在此探索沉淀 出 3 个适配工作流的自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`）
+- **全链路记录** — `pre_study` → `daily-log` → `hackathon`，既是个人学习笔记仓库也是 **proof-of-work workspace**
+- **关于链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*, PPT 演示可附带, 可以额外探索其他开源项目的辅助进行项目成品的丰富多态化的展示
 
-### 排期
+
+
+### TimeLine (时间线)
 
 ```mermaid
 gantt
@@ -53,31 +56,7 @@ gantt
     最终提交                :milestone, m2, 2026-06-14, 0d
 ```
 
-## 🌱 origin (起源)
-
-> *先前从最初的 SDE 到泡在 AI  Coding圈子里, 叙事框架在 Web2 下, 不清楚 Web3 的生态, 范式, 体系, 了解到该共学营和黑客松的赛事培养安排, 有想法将 之前 AI Coding 的方法论和工作流投入到该repo中, 并持续产出迭代"。*
-
-对 *授权、签名、不可伪造的执行记录、可撤销的能力*——这些恰好是 Web3 这十年攒下来的基础核心设施在做的事。可以用 **AI 正在把这些能力接入自动化流程**, 整个探索的过程还是很吸引并值得参与的
-
-这个*交叉*  的 AI Web3 地带，把两套语言学到能互译，互通, 在交接带中最后打磨成一个能在测试网上跑起来的 MVP, 展示出一些实用的价值即满足, 这个仓库就是这个过程的基础学习记录 和 思考火花。
-
-## 📊 progress
-
-> (维护时间) / 最后更新：2026-05-20 · Week 1 · Day 4
-
-### pre-study note (预习笔记)
-
-| 模块 | 进度 | 状态 |
-|------|------|------|
-| AI 基础 | 11 / 11 | ✅ 全部完成 |
-| Web3 基础 | 10 / 10 | ✅ 全部完成 |
-| AI × Web3 交叉 | 15 / 15 | ✅ 全部完成 |
-| 前沿探索 | 6 / 6 | ✅ 全部完成 |
-| **合计** | **42 / 42 (100%)** | |
-
-### timeline (时间线)
-
-活动安排: 
+关于活动的安排: 
 
 ```mermaid
 flowchart LR
@@ -95,6 +74,40 @@ flowchart LR
     style F fill:#EF4444,color:#fff
 ```
 
+## 🌱 Origin (起源)
+
+> *本人先前从最初的 SDE 传统软件开发, 到如今泡在 AI  Coding 圈子里积累经验和方法论,  不清楚 Web3 的生态, 范式, 体系,, 也不想一直局限在 Web2 的叙事框架下,  机缘了解到该共学营和黑客松的赛事关于人才的培养计划, 有想法和一定热情将之前所学投入到该 repo 中, 并持续产出迭代出好的成品"。*
+
+一些被吸引住的 Web3 的概念: 
+
+​	对 *授权、签名、不可伪造的执行记录、可撤销的能力*——这些恰好是 Web3 这十年攒下来的基础核心设施在做的事。
+
+同时可以用 **AI 正在把这些能力接入自动化流程**, 整个探索, 挖掘的过程还是很吸引并值得深究和学习的
+
+因此在这个*交叉*  的 AI Web3 地带，可以把两套语言学到能互译，互通, 在交接带中最后打磨成一个能在测试网上跑起来的 MVP, 展示出一些实用的价值, 这就是这个仓库的诞生起源, 记录过程探索的 学习记录 和 思考碰撞火花。
+
+
+
+
+
+## 📊 Progress (进程)
+
+> (记录维护时间) / 最后更新：2026-05-20 · Week 1 · Day 4
+
+
+
+### pre-study note (预习笔记)
+
+| 模块 | 进度 | 状态 |
+|------|------|------|
+| AI 基础 | 11 / 11 | ✅ 全部完成 |
+| Web3 基础 | 10 / 10 | ✅ 全部完成 |
+| AI × Web3 交叉 | 15 / 15 | ✅ 全部完成 |
+| 前沿探索 | 6 / 6 | ✅ 全部完成 |
+| **合计** | **42 / 42 (100%)** | |
+
+
+
 ### everyday-task (每日任务)
 
 记录每日核心产出
@@ -105,11 +118,13 @@ flowchart LR
 | 05-18 (Day 2) | ✅ | `ai-fundamentals/` 11 节 + 两场直播笔记 + 规范架构 |
 | 05-19 (Day 3) | ✅ | `web3-fundamentals/` 10 节 + Case/Eval 归档 |
 
-## 📂 repo-structure
 
-pre-study: 学习基础知识
 
-daily-log: 记录每日所得
+## 📂 Repo-Structure (仓库结构)
+
+pre-study: 学习基础知识 + 笔记📚
+
+daily-log: 记录每日所得 + 精炼提要
 
 hackathon: 记录` MVP / project `产出
 
@@ -185,7 +200,11 @@ web3career-study-track/
 
 </details>
 
-## ⚙️ workflow (工作流)
+
+
+## ⚙️ Workflow (工作流)
+
+
 
 ### loop (每日循环)
 
@@ -260,13 +279,19 @@ flowchart TD
     style P3 fill:#10B981,color:#fff
 ```
 
-## 💡 judge (判断)
+
+
+
+
+## 💡 Judge (判断)
 
 > **🤖 关于 AI** — 模型输出永远是 *"候选答案"*，不是事实。越靠近执行层，越要把候选答案变成**可被代码验证的对象**。最警惕的 Agent 设计：`模糊目标 + 广泛工具 + 长期记忆 + 直接动钱`。
 
 > **⛓️ 关于 Web3** — 私钥就是控制权本身。钱包交互三层权限——*只读 < 签名 < 发交易*——很多人以为自己在做第一层，其实点了第三层。Session Key 是 Agent Wallet 的胜负手：**可限制 + 可过期 + 可撤销**。
 
 > **🔀 关于交叉地带** — Agent 不应该拥有"钱包"，它应该只拥有 **可限制、可审计、可撤销** 的能力。把私钥扔给 Agent 是 `root 权限滥用`。*Audit Trail* 是最容易也最先该落地的可验证层。
+
+
 
 ## 🏆 Hackathon 方向
 
@@ -281,7 +306,9 @@ flowchart TD
 
 硬性要求：**必须有测试网 Tx Hash**，*不接受 PPT 项目*。
 
-## 🔗 link (关键链接)
+
+
+## 🔗 Link (关键链接)
 
 | 用途 | 链接 |
 |------|------|
@@ -291,13 +318,18 @@ flowchart TD
 | 👤 Builder Profile | <https://web3career.build/profile> |
 | 💬 Telegram 学员群 | <https://t.me/aiweb3school> |
 
-## 🔒 privacy (隐私提醒)
+
+
+## 🔒 Privacy (隐私提醒)
 
 > 本仓库为 **public**，请勿提交私钥、助记词、API Key、未公开联系方式或他人个人数据。
 > 如需记录敏感操作，使用占位符或截图脱敏后提交。
 
-## 🤝 cowork (合作生态)
+
+
+## 🤝 Thanks to Sponsors (合作赞助方鸣谢)
 
 > **🔗 LI.FI** — 跨链执行、流动性聚合、`Intent/Solver` 架构。做 *Agentic Commerce* 的 SDK 入口。
 
 > **💧 Waterdrip Capital** — 黑客松评审、资源对接、算力支持。Demo 阶段争取*真实反馈*。
+
