@@ -14,6 +14,7 @@ description: |
 - 用户说"cascade 一下"
 - 用户说"同步一下目录"
 - 用户说"看看有没有要更新的"
+- 每篇预习笔记完成后自动触发
 
 ## 工作流程
 
@@ -27,9 +28,9 @@ description: |
 
 | 变更文件模式 | 归属变更源 |
 |-------------|-----------|
-| `pre_study/*/README.md` | 预习笔记完成 |
+| `pre_study/*/*/README.md` | 预习笔记完成 |
 | `daily-log/*/YYYY-MM-DD.md` | 每日收尾 |
-| `idea/skills/*/SKILL.md` | Skill 迭代 |
+| `.claude/skills/*/SKILL.md` | Skill 迭代 |
 | `CLAUDE.md` 或 `steering.md` | 规范同步 |
 | `README.md` 或 `GUIDE.md` | 结构变更 |
 | 新建周目录 | 跨周切换 |
@@ -55,22 +56,30 @@ description: |
 ```
 变更源: pre_study/<module>/<Topic>/README.md
 ↓
-1. pre_study/__index__.md          → 对应行状态 ⚪→✅ + 总进度 +1
-2. README.md                       → badge 进度 +1 + highlights 数字 +1
-                                      + progress 表对应行 +1 + 合计 +1
-3. daily-log/week-N/YYYY-MM-DD.md  → "今天做了什么"追加一条
-                                      + 产出表追加 2 行（笔记 + 练习）
-4. daily-log/.../__index__.md      → 状态标记更新
-5. memory/project_prestudy_status.md → 进度数字 +1 + 最新主题更新
-6. git commit                      → study(<scope>): ...
+1. pre_study/__index__.md          → 对应行状态 ⚪→✅ + 模块进度 +1 + 总进度 +1
+2. 根 README.md                     → badge 进度 +1（重算百分比）
+                                        + highlights 数字 +1
+                                        + progress 表对应行 +1 + 合计 +1
+                                        + 更新日期
+3. daily-log/week-N/YYYY-MM-DD.md  → 产出表追加 2 行（笔记 + 练习）
+4. memory/project_prestudy_status.md → 进度数字 +1 + 最新主题更新
+5. [模块完成时] 根 README.md gantt 图 → :active → :done
+6. [模块完成时] 根 README.md progress 表 → 🟡 → ✅
 ```
 
 检查项：
 - [ ] `__index__.md` 里该模块状态是否与实际一致？
-- [ ] `README.md` 的 badge / highlights / progress 表 / 合计四处数字是否一致？
-- [ ] 当日日志里是否记录了这个产出（"做了什么" + 产出表）？
+- [ ] 根 `README.md` 的 badge / highlights / progress 表 / 合计四处数字是否一致？
+- [ ] badge 百分比是否正确计算？（如 31/42 ≈ 74%）
+- [ ] 当日日志里是否记录了这个产出（产出表）？
 - [ ] memory 里的进度数字是否准确？
-- [ ] 是否需要拆分 commit（每模块一个）？
+- [ ] 模块完成时 gantt 图和 progress 表是否更新？
+
+**进度数字计算规则：**
+- badge 百分比 = 已完成/总数，四舍五入到整数（如 31/42 = 73.8% → 74%）
+- highlights 数字 = 已完成总数（如 36/42）
+- progress 表模块行 = 模块内已完成/模块总数
+- progress 表合计行 = 全部已完成/42
 
 ---
 
@@ -119,18 +128,18 @@ description: |
 #### 链路 D：Skill 迭代
 
 ```
-变更源: idea/skills/<name>/SKILL.md
+变更源: .claude/skills/<name>/SKILL.md 或 .kiro/skills/<name>/SKILL.md
 ↓
-1. idea/reference/case/            → 新案例归档
-2. idea/reference/eval/            → 评估规范更新
-3. idea/README.md                  → 如有结构变化
-4. memory/                         → 技能经验沉淀
+1. 另一个位置的 skill → 保持同步
+   - .claude/skills/ 改了 → .kiro/skills/ 跟着改
+   - .kiro/skills/ 改了 → .claude/skills/ 跟着改
+2. memory/ → 技能经验沉淀（feedback 类型）
 ```
 
 检查项：
 - [ ] SKILL.md 的 description 是否足够清晰（触发条件）？
-- [ ] 测试案例是否归档到 case/？
-- [ ] 评估标准是否更新到 eval/？
+- [ ] 两个位置的 skill 内容是否一致？
+- [ ] 新经验是否沉淀到 memory？
 
 ---
 
@@ -173,17 +182,20 @@ description: |
 
 对每个需要更新的文件：
 1. 先读取当前内容
-2. 生成变更建议，展示给用户确认
-3. 用户确认后执行 Edit
+2. 执行 Edit（级联更新通常不需要用户确认，除非涉及结构性变更）
 
 ### Step 4：提交
 
-按模块分组 commit，格式 `<type>(<scope>): <subject>`，等待用户确认后 push。
+按逻辑分组 commit：
+- 笔记批量完成 → `log(日期): 模块名 +N 节完成 — 笔记 + 实践 + 级联同步`
+- Skill 迭代 → `refactor(skills): 经验沉淀到 skill`
+- 等待用户确认后 push。
 
 ## 约束
 
 - **不要假设**——如果检测不到变更源，问用户
-- **先展示再执行**——每个文件的变更建议先给用户看
 - **不要过度更新**——只动链路上的文件，不顺手改无关内容
-- **保持对称**——CLAUDE.md 和 steering.md 必须同步
+- **保持对称**——CLAUDE.md 和 steering.md 必须同步，.claude/skills 和 .kiro/skills 必须同步
 - **进度数字要准**——memory 里的进度必须数 actual 已完成的模块数，不靠猜
+- **badge 百分比要算**——不要写错百分比，手动计算后写入
+- **模块完成要收尾**——gantt 图 + progress 表状态都要更新

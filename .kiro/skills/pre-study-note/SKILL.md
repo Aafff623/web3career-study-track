@@ -6,7 +6,7 @@ description: |
 
 # Pre-study Note Skill
 
-将 Handbook 原文整理为高质量预习笔记，保留完整原文并添加精炼批注。支持单篇处理和批量处理（3-4 篇/批）。
+将 Handbook 原文整理为高质量预习笔记，保留完整原文并添加精炼批注。支持单篇处理和批量处理（3-6 篇/批）。
 
 ## 输入
 
@@ -53,10 +53,15 @@ LLM 通过海量文本训练，学会了语言的统计规律。
 
 #### 3. README.md 头部格式
 
+根据模块选择对应的模块标识：
+
 ```markdown
 # Topic-Name
 
-> 模块：AI × Web3 交叉 · 状态：✅ 已完成
+> 模块：AI × Web3 交叉 · 状态：✅ 已完成      ← ai-web3-bridge 模块
+> 模块：前沿探索 · 状态：✅ 已完成              ← frontier 模块
+> 模块：AI 基础 · 状态：✅ 已完成              ← ai-fundamentals 模块
+> 模块：Web3 基础 · 状态：✅ 已完成            ← web3-fundamentals 模块
 
 ## 中文名（English Name）
 
@@ -74,23 +79,31 @@ LLM 通过海量文本训练，学会了语言的统计规律。
 - 放置位置：与 README.md 同级目录
 - 内容结构：目标 → 场景（如有）→ 流程 → 验收标准
 
-### 批量处理（3-4 篇/批）
+### 批量处理（3-6 篇/批）
 
 用户分批发送原文时，按以下流程自动处理，不需要用户提醒每一步：
 
 1. **逐篇处理**：按上述单篇流程依次处理每篇
 2. **每篇完成后立即级联更新**（不累积到最后）：
-   - `pre_study/__index__.md` → 对应行 ⚪→✅ + 总进度 +1
-   - `README.md` → badge 进度 +1 + highlights 数字 +1 + progress 表对应行 +1 + 合计 +1
-   - 当天 `daily-log/week-N/YYYY-MM-DD/YYYY-MM-DD.md` → "今天做了什么"追加一条 + 产出表追加 2 行（笔记 + 练习）
+   - `pre_study/__index__.md` → 对应行 ⚪→✅ + 模块进度 +1 + 总进度 +1
+   - 根 `README.md` → badge 进度 +1（重算百分比）+ highlights 数字 +1 + progress 表对应行 +1 + 合计 +1
+   - 当天 `daily-log/week-N/YYYY-MM-DD/YYYY-MM-DD.md` → 产出表追加 2 行（笔记 + 练习）
    - `memory/project_prestudy_status.md` → 更新总进度和最新完成的主题
 3. **批次完成后自动审阅**：
    - 检查所有新建 README.md 头部格式一致性
    - 检查 practice 文件是否存在且结构完整
    - 检查 `__index__.md` 状态和总数是否一致
-   - 检查 `README.md` badge / highlights / progress 表 / 合计四处数字是否一致
+   - 检查根 `README.md` badge / highlights / progress 表 / 合计四处数字是否一致
    - 检查 daily-log 产出表行数是否匹配（每篇 = 2 行：笔记 + 练习）
    - 检查 memory 是否同步
+
+### 模块完成时的额外维护
+
+当一个模块达到 15/15 或 6/6 等满额状态时，除了常规级联更新外，还需：
+
+1. **根 `README.md` gantt 图** — 将对应模块从 `:active` 改为 `:done`，结束日期改为当天
+2. **根 `README.md` progress 表** — 状态从 🟡 进行中 改为 ✅ 全部完成
+3. **`pre_study/__index__.md`** — 模块内所有条目确认全部 ✅
 
 ## 输出格式
 
@@ -109,4 +122,7 @@ module-name/
 - 实践文件保持简洁，聚焦"目标→流程→验收标准"
 - 批注质量要稳定——如果不确定，宁可少写一条，不要注水
 - 批量模式下每篇完成后立即级联更新，不累积
-- 级联更新涉及 4 处：`__index__.md` / `README.md` / `daily-log` / `memory`
+- 级联更新涉及 4 处：`__index__.md` / 根 `README.md` / `daily-log` / `memory`
+- 根 `README.md` badge 百分比需手动计算（如 31/42 ≈ 74%）
+- 长会话中如原文内容丢失（上下文压缩），提示用户重新粘贴
+- Skill 文件需同步到 `.claude/skills/` 和 `.kiro/skills/` 两个位置
