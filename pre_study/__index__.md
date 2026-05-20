@@ -109,21 +109,21 @@ pre_study/<module>/<Topic>/README.md
 
 | 状态 | 主题 | 笔记 | 一句话定位 |
 |------|------|------|-----------|
-| ⚪ | Chain-aware-Context | [📝](./ai-web3-bridge/Chain-aware-Context/README.md) | 链上数据进入 AI 上下文（带 citation + 时间戳） |
-| ⚪ | Web3-Tool-Use | [📝](./ai-web3-bridge/Web3-Tool-Use/README.md) | RPC / 读 / 写工具分离、权限、日志 |
-| ⚪ | Agent-Workflow | [📝](./ai-web3-bridge/Agent-Workflow/README.md) | 任务图、状态机、Human-in-the-loop、Trace |
-| ⚪ | Agent-Wallet | [📝](./ai-web3-bridge/Agent-Wallet/README.md) | AA 钱包、Session Key、Policy、Guard、模拟、撤销 |
-| ⚪ | Machine-Payment | [📝](./ai-web3-bridge/Machine-Payment/README.md) | 预算、报价、Payment Intent、x402、订阅 |
-| ⚪ | Settlement-and-Escrow | [📝](./ai-web3-bridge/Settlement-and-Escrow/README.md) | Escrow 状态机、收据、交付证明、争议仲裁 |
-| ⚪ | Agent-Identity | [📝](./ai-web3-bridge/Agent-Identity/README.md) | Agent Profile、能力声明、DID / VC、注册表 |
-| ⚪ | Agent-Trust-and-Reputation | [📝](./ai-web3-bridge/Agent-Trust-and-Reputation/README.md) | 声誉、Attestation、Stake、Slashing |
-| ⚪ | AI-Oracle | [📝](./ai-web3-bridge/AI-Oracle/README.md) | AI 输出上链、Proof of Inference、争议机制 |
-| ⚪ | Verifiable-AI | [📝](./ai-web3-bridge/Verifiable-AI/README.md) | TEE、ZK、zkML、审计追踪、按风险分层 |
-| ⚪ | AI-Security | [📝](./ai-web3-bridge/AI-Security/README.md) | Prompt Injection 防护、工具滥用、权限隔离 |
-| ⚪ | AI-Privacy | [📝](./ai-web3-bridge/AI-Privacy/README.md) | 数据边界、本地 AI、最小披露 |
-| ⚪ | AI-Sovereignty | [📝](./ai-web3-bridge/AI-Sovereignty/README.md) | 用户控制、数据可迁移、d/acc、CROPS |
-| ⚪ | Governance-AI | [📝](./ai-web3-bridge/Governance-AI/README.md) | 提案摘要、来源可追溯、人保留决策权 |
-| ⚪ | Decentralized-AI | [📝](./ai-web3-bridge/Decentralized-AI/README.md) | 模型市场、算力市场、推理网络、结算 |
+| ✅ | Chain-aware-Context | [📝](./ai-web3-bridge/Chain-aware-Context/README.md) | 链上数据进入 AI 上下文（带 citation + 时间戳） |
+| ✅ | Web3-Tool-Use | [📝](./ai-web3-bridge/Web3-Tool-Use/README.md) | RPC / 读 / 写工具分离、权限、日志 |
+| ✅ | Agent-Workflow | [📝](./ai-web3-bridge/Agent-Workflow/README.md) | 任务图、状态机、Human-in-the-loop、Trace |
+| ✅ | Agent-Wallet | [📝](./ai-web3-bridge/Agent-Wallet/README.md) | AA 钱包、Session Key、Policy、Guard、模拟、撤销 |
+| ✅ | Machine-Payment | [📝](./ai-web3-bridge/Machine-Payment/README.md) | 预算、报价、Payment Intent、x402、订阅 |
+| ✅ | Settlement-and-Escrow | [📝](./ai-web3-bridge/Settlement-and-Escrow/README.md) | Escrow 状态机、收据、交付证明、争议仲裁 |
+| ✅ | Agent-Identity | [📝](./ai-web3-bridge/Agent-Identity/README.md) | Agent Profile、能力声明、DID / VC、注册表 |
+| ✅ | Agent-Trust-and-Reputation | [📝](./ai-web3-bridge/Agent-Trust-and-Reputation/README.md) | 声誉、Attestation、Stake、Slashing |
+| ✅ | AI-Oracle | [📝](./ai-web3-bridge/AI-Oracle/README.md) | AI 输出上链、Proof of Inference、争议机制 |
+| ✅ | Verifiable-AI | [📝](./ai-web3-bridge/Verifiable-AI/README.md) | TEE、ZK、zkML、审计追踪、按风险分层 |
+| ✅ | AI-Security | [📝](./ai-web3-bridge/AI-Security/README.md) | Prompt Injection 防护、工具滥用、权限隔离 |
+| ✅ | AI-Privacy | [📝](./ai-web3-bridge/AI-Privacy/README.md) | 数据边界、本地 AI、最小披露 |
+| ✅ | AI-Sovereignty | [📝](./ai-web3-bridge/AI-Sovereignty/README.md) | 用户控制、数据可迁移、d/acc、CROPS |
+| ✅ | Governance-AI | [📝](./ai-web3-bridge/Governance-AI/README.md) | 提案摘要、来源可追溯、人保留决策权 |
+| ✅ | Decentralized-AI | [📝](./ai-web3-bridge/Decentralized-AI/README.md) | 模型市场、算力市场、推理网络、结算 |
 
 ### 模块四 · 前沿探索（6 节）
 
@@ -142,9 +142,9 @@ pre_study/<module>/<Topic>/README.md
 |------|--------------|
 | AI 基础 | 11 / 11 |
 | Web3 基础 | 10 / 10 |
-| AI × Web3 交叉 | 0 / 15 |
+| AI × Web3 交叉 | 15 / 15 |
 | 前沿探索 | 0 / 6 |
-| **合计** | **21 / 42** |
+| **合计** | **36 / 42** |
 
 > 每完成一节 Agent 就回到这里更新 并且 维护 对应行的状态和总进度数字, 在通过人工的review微调, 进行 commit & push
 

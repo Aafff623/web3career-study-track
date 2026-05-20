@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/营期-2026--05--17%20to%2006--14-blue?style=for-the-badge" alt="period">
-  <img src="https://img.shields.io/badge/进度-21%2F42%20(2525)-brightgreen?style=for-the-badge" alt="progress">
+  <img src="https://img.shields.io/badge/进度-36%2F42%20(86%25)-brightgreen?style=for-the-badge" alt="progress">
   <img src="https://img.shields.io/badge/状态-进行中-brightgreen?style=for-the-badge" alt="status">
   <img src="https://img.shields.io/badge/Hackathon-方向待定-orange?style=for-the-badge" alt="hackathon">
 </p>
@@ -23,7 +23,7 @@
 
 ## ✨ Highlights
 
-- **pre study note:  21/42** — `AI Fundamentdals` 11 节 + `Web3 Fundamentals`  + `AI-Web3-Bridge`10 节已完成，每哥主题文件夹包含: README.md(该原文的介绍+人工批注) + Theme-exercise.md(主题练习的demo) 
+- **pre study note:  36/42** — `AI Fundamentdals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节已完成，每个主题文件夹包含: README.md(该原文的介绍+人工批注) + Theme-exercise.md(主题练习的demo)
 - **Agent 驱动** — `Claude Code` / `Kiro` / other `Agent` 工具接入进行驱动，3 个在实践过程中自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`）
 - **全链路记录** — `pre_study` → `daily-log` → `hackathon`，即是笔记仓库也是 **proof-of-work workspace**
 - **链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*, PPT 演示可附带
@@ -39,7 +39,7 @@ gantt
     section 预习
     AI 基础 11 节           :done, pre1, 2026-05-12, 2026-05-18
     Web3 基础 10 节         :done, pre2, 2026-05-12, 2026-05-19
-    AI × Web3 交叉 15 节    :active, pre3, 2026-05-20, 2026-05-30
+    AI × Web3 交叉 15 节    :done, pre3, 2026-05-20, 2026-05-20
     前沿探索 6 节           :pre4, 2026-05-25, 2026-06-01
 
     section 共学
@@ -63,7 +63,7 @@ gantt
 
 ## 📊 progress
 
-> (维护时间) / 最后更新：2026-05-19 · Week 1 · Day 3
+> (维护时间) / 最后更新：2026-05-20 · Week 1 · Day 4
 
 ### pre-study note (预习笔记)
 
@@ -71,9 +71,9 @@ gantt
 |------|------|------|
 | AI 基础 | 11 / 11 | ✅ 全部完成 |
 | Web3 基础 | 10 / 10 | ✅ 全部完成 |
-| AI × Web3 交叉 | 0 / 15 | ⚪ 未开始 |
+| AI × Web3 交叉 | 15 / 15 | ✅ 全部完成 |
 | 前沿探索 | 0 / 6 | ⚪ 未开始 |
-| **合计** | **21 / 42 (50%)** | |
+| **合计** | **36 / 42 (86%)** | |
 
 ### timeline (时间线)
 
@@ -125,6 +125,8 @@ pre_study/              daily-log/              hackathon/
 │   (15 节 ⚪)          ├── week-3/
 └── frontier/           └── week-4/
     (6 节 ⚪)
+
+handbook-feedback/       ← Handbook 反馈与共建
 ```
 
 
@@ -135,6 +137,7 @@ pre_study/              daily-log/              hackathon/
 ```
 web3career-study-track/
 ├── README.md                  ← 你正在看的这个
+├── profile.md                 ← 学员画像
 ├── GUIDE.md                   ← 项目通用规范（Claude Code / Kiro 等工具共用）
 ├── CLAUDE.md                  ← Claude Code 专用行为指引
 ├── steering.md                ← Kiro 专用方向与决策指引
@@ -169,6 +172,8 @@ web3career-study-track/
 ├── hackathon/                 ← 输出：最终项目
 │   ├── contracts/               合约源码 + 测试网 Tx Hash
 │   └── demo/                    演示材料
+│
+├── handbook-feedback/         ← Handbook 反馈与共建
 │
 ├── idea/                      ← 实验：Skill 原型 + 案例
 │   ├── skills/                  Skill 草稿
@@ -285,6 +290,11 @@ flowchart TD
 | 📋 WCB 任务平台 | <https://web3career.build/zh/programs/AI-Web3-School?tab=apply> |
 | 👤 Builder Profile | <https://web3career.build/profile> |
 | 💬 Telegram 学员群 | <https://t.me/aiweb3school> |
+
+## 🔒 privacy (隐私提醒)
+
+> 本仓库为 **public**，请勿提交私钥、助记词、API Key、未公开联系方式或他人个人数据。
+> 如需记录敏感操作，使用占位符或截图脱敏后提交。
 
 ## 🤝 cowork (合作生态)
 

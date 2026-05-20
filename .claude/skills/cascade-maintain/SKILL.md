@@ -55,16 +55,20 @@ description: |
 ```
 变更源: pre_study/<module>/<Topic>/README.md
 ↓
-1. pre_study/__index__.md          → 对应行状态 ⚪→🟡 或 🟡→✅
-2. daily-log/week-N/YYYY-MM-DD.md  → 追加今日产出记录
-3. daily-log/.../__index__.md      → 状态标记更新
-4. memory/project_prestudy_status.md → 进度数字 (如 12/42)
-5. git commit                      → study(<scope>): ...
+1. pre_study/__index__.md          → 对应行状态 ⚪→✅ + 总进度 +1
+2. README.md                       → badge 进度 +1 + highlights 数字 +1
+                                      + progress 表对应行 +1 + 合计 +1
+3. daily-log/week-N/YYYY-MM-DD.md  → "今天做了什么"追加一条
+                                      + 产出表追加 2 行（笔记 + 练习）
+4. daily-log/.../__index__.md      → 状态标记更新
+5. memory/project_prestudy_status.md → 进度数字 +1 + 最新主题更新
+6. git commit                      → study(<scope>): ...
 ```
 
 检查项：
 - [ ] `__index__.md` 里该模块状态是否与实际一致？
-- [ ] 当日日志里是否记录了这个产出？
+- [ ] `README.md` 的 badge / highlights / progress 表 / 合计四处数字是否一致？
+- [ ] 当日日志里是否记录了这个产出（"做了什么" + 产出表）？
 - [ ] memory 里的进度数字是否准确？
 - [ ] 是否需要拆分 commit（每模块一个）？
 
