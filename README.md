@@ -25,7 +25,7 @@
 ## ✨ Highlights (亮点聚焦)
 
 - **pre study note:  42/42** — 官网 handbook 中的 `AI Fundamentdals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节 + `Frontier` 6 节已经全部学习完成，每个主题(theme)文件夹包含: README.md(该原文的引用 + 人工阅读批注) + Theme-exercise.md(主题练习的demo)
-- **Agent 驱动** — 项目的索引以及规范维护交付给 `Claude Code` / `Kiro` / other `Agent` 工具接入进行系统化驱动，并在此探索沉淀 出 3 个适配工作流的自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`）
+- **Agent 驱动** — 项目的索引以及规范维护交付给 `Claude Code` / `Kiro` / other `Agent` 工具接入进行系统化驱动，并在此探索沉淀 出 3 个适配工作流的自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`, `git-commit-guide` ）
 - **全链路记录** — `pre_study` → `daily-log` → `hackathon`，既是个人学习笔记仓库也是 **proof-of-work workspace**
 - **关于链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*, PPT 演示可附带, 可以额外探索其他开源项目的辅助进行项目成品的丰富多态化的展示
 
@@ -161,6 +161,7 @@ web3career-study-track/
 │   └── skills/
 │       ├── cascade-maintain/    链式维护
 │       ├── daily-log-sync/      每日日志同步
+│       ├── git-commit-guide/    Git 提交规范
 │       └── pre-study-note/      预习笔记整理
 │
 ├── .kiro/                     ← Kiro 配置（skill 规范）
