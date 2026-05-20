@@ -129,12 +129,12 @@ pre_study/<module>/<Topic>/README.md
 
 | 状态 | 主题 | 笔记 | 一句话定位 |
 |------|------|------|-----------|
-| ⚪ | Agentic-Commerce | [📝](./frontier/Agentic-Commerce/README.md) | 购买意图结构化、预算分层、Escrow 闭环 |
-| ⚪ | Dev-Tooling | [📝](./frontier/Dev-Tooling/README.md) | 文档→Agent、合约阅读、交易解释、测试生成 |
-| ⚪ | Wallet-and-Permission | [📝](./frontier/Wallet-and-Permission/README.md) | AI 钱包 UX、Permission Policy、Session Key 流程 |
-| ⚪ | AI-Security | [📝](./frontier/AI-Security/README.md) | 威胁模型、工具权限隔离、行为审计 |
-| ⚪ | Governance | [📝](./frontier/Governance/README.md) | 提案摘要器、会议→行动、预算检查、多元视角 |
-| ⚪ | Open-Track | [📝](./frontier/Open-Track/README.md) | AI-native Wallet、链上数据分析、跨赛道组合 |
+| ✅ | Agentic-Commerce | [📝](./frontier/Agentic-Commerce/README.md) | 购买意图结构化、预算分层、Escrow 闭环 |
+| ✅ | Dev-Tooling | [📝](./frontier/Dev-Tooling/README.md) | 文档→Agent、合约阅读、交易解释、测试生成 |
+| ✅ | Wallet-and-Permission | [📝](./frontier/Wallet-and-Permission/README.md) | AI 钱包 UX、Permission Policy、Session Key 流程 |
+| ✅ | AI-Security | [📝](./frontier/AI-Security/README.md) | 威胁模型、工具权限隔离、行为审计 |
+| ✅ | Governance | [📝](./frontier/Governance/README.md) | 提案摘要器、会议→行动、预算检查、多元视角 |
+| ✅ | Open-Track | [📝](./frontier/Open-Track/README.md) | AI-native Wallet、链上数据分析、跨赛道组合 |
 
 ## 总进度
 
@@ -143,8 +143,8 @@ pre_study/<module>/<Topic>/README.md
 | AI 基础 | 11 / 11 |
 | Web3 基础 | 10 / 10 |
 | AI × Web3 交叉 | 15 / 15 |
-| 前沿探索 | 0 / 6 |
-| **合计** | **36 / 42** |
+| 前沿探索 | 6 / 6 |
+| **合计** | **42 / 42** |
 
 > 每完成一节 Agent 就回到这里更新 并且 维护 对应行的状态和总进度数字, 在通过人工的review微调, 进行 commit & push
 

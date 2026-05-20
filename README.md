@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/营期-2026--05--17%20to%2006--14-blue?style=for-the-badge" alt="period">
-  <img src="https://img.shields.io/badge/进度-36%2F42%20(86%25)-brightgreen?style=for-the-badge" alt="progress">
+  <img src="https://img.shields.io/badge/进度-42%2F42%20(100%25)-brightgreen?style=for-the-badge" alt="progress">
   <img src="https://img.shields.io/badge/状态-进行中-brightgreen?style=for-the-badge" alt="status">
   <img src="https://img.shields.io/badge/Hackathon-方向待定-orange?style=for-the-badge" alt="hackathon">
 </p>
@@ -23,7 +23,7 @@
 
 ## ✨ Highlights
 
-- **pre study note:  36/42** — `AI Fundamentdals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节已完成，每个主题文件夹包含: README.md(该原文的介绍+人工批注) + Theme-exercise.md(主题练习的demo)
+- **pre study note:  42/42** — `AI Fundamentdals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节 + `Frontier` 6 节全部完成，每个主题文件夹包含: README.md(该原文的介绍+人工批注) + Theme-exercise.md(主题练习的demo)
 - **Agent 驱动** — `Claude Code` / `Kiro` / other `Agent` 工具接入进行驱动，3 个在实践过程中自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`）
 - **全链路记录** — `pre_study` → `daily-log` → `hackathon`，即是笔记仓库也是 **proof-of-work workspace**
 - **链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*, PPT 演示可附带
@@ -40,7 +40,7 @@ gantt
     AI 基础 11 节           :done, pre1, 2026-05-12, 2026-05-18
     Web3 基础 10 节         :done, pre2, 2026-05-12, 2026-05-19
     AI × Web3 交叉 15 节    :done, pre3, 2026-05-20, 2026-05-20
-    前沿探索 6 节           :pre4, 2026-05-25, 2026-06-01
+    前沿探索 6 节           :done, pre4, 2026-05-20, 2026-05-20
 
     section 共学
     Week 1 建立共同语言      :done, w1, 2026-05-17, 2026-05-23
@@ -72,8 +72,8 @@ gantt
 | AI 基础 | 11 / 11 | ✅ 全部完成 |
 | Web3 基础 | 10 / 10 | ✅ 全部完成 |
 | AI × Web3 交叉 | 15 / 15 | ✅ 全部完成 |
-| 前沿探索 | 0 / 6 | ⚪ 未开始 |
-| **合计** | **36 / 42 (86%)** | |
+| 前沿探索 | 6 / 6 | ✅ 全部完成 |
+| **合计** | **42 / 42 (100%)** | |
 
 ### timeline (时间线)
 
