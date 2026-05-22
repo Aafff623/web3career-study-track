@@ -92,7 +92,7 @@ flowchart LR
 
 ## 📊 Progress (进程)
 
-> (记录维护时间) / 最后更新：2026-05-20 · Week 1 · Day 4
+> (记录维护时间) / 最后更新：2026-05-22 · Week 1 · Day 6
 
 
 
@@ -137,11 +137,12 @@ pre_study/              daily-log/              hackathon/
 ├── web3-fundamentals/  │   ├── 2026-05-18/
 │   (10 节 ✅)          │   └── ...
 ├── ai-web3-bridge/     ├── week-2/
-│   (15 节 ⚪)          ├── week-3/
+│   (15 节 ✅)          ├── week-3/
 └── frontier/           └── week-4/
-    (6 节 ⚪)
+    (6 节 ✅)
 
 handbook-feedback/       ← Handbook 反馈与共建
+extras/                  ← 课外加餐资料（web3 / ai / crossover）
 ```
 
 
@@ -188,6 +189,12 @@ web3career-study-track/
 ├── hackathon/                 ← 输出：最终项目
 │   ├── contracts/               合约源码 + 测试网 Tx Hash
 │   └── demo/                    演示材料
+│
+├── extras/                    ← 课外加餐：B 站 / 博客 / Twitter / 文档
+│   ├── README.md                模块入口（元数据约定 + 笔记规范）
+│   ├── web3/                    Web3 主题资料
+│   ├── ai/                      AI 主题资料
+│   └── crossover/               AI × Web3 交叉主题
 │
 ├── handbook-feedback/         ← Handbook 反馈与共建
 │
