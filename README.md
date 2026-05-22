@@ -117,6 +117,9 @@ flowchart LR
 | 05-17 (Day 1) | ✅ | 开营仪式整理精要 |
 | 05-18 (Day 2) | ✅ | `ai-fundamentals/` 11 节 + 两场直播笔记 + 规范架构 |
 | 05-19 (Day 3) | ✅ | `web3-fundamentals/` 10 节 + Case/Eval 归档 |
+| 05-20 (Day 4) | ✅ | Web3 核心原理直播笔记（钱包 / 交易 / 区块链三问） |
+| 05-21 (Day 5) | ✅ | AI 下乡计划回看 + DigitalOcean Agent 基建 + 前三章复盘 |
+| 05-22 (Day 6) | ✅ | Hermes Agent 调教 + 仓库基建（Cursor MCP / extras）+ 三场直播全勤 |
 
 
 
