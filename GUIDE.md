@@ -13,6 +13,7 @@
 - `daily-log/week-N/__index__.md` — 当周概览与每日索引
 - `pre_study/` — 预习阶段 42 节知识笔记
 - `hackathon/` — Hackathon 项目代码与演示
+- `extras/` — 课程外加餐学习资料（按主题：`web3` / `ai` / `crossover`），详见 [`extras/README.md`](./extras/README.md)
 - `reference/` — 规范文件
 
 ## 工作索引规范
