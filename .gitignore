@@ -1,0 +1,21 @@
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Dependencies ---
+node_modules/
+
+# --- Hackathon: contract build artifacts (Hardhat / Foundry) ---
+artifacts/
+cache/
+out/
+typechain-types/
+broadcast/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
