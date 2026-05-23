@@ -17,6 +17,7 @@
 |------|------|
 | [`2026-05-17.md`](./2026-05-17.md) | 开营仪式整理精要：任务结构、学习方向、打卡机制、请假与答疑 |
 | [`TASK.md`](./TASK.md) | 三条有效笔记 + 观看截图 |
+| [`meetings/opening-ceremony.md`](./meetings/opening-ceremony.md) | 开营仪式直播完整笔记（biliGPT 清洗版） |
 | [`assets/`](./assets/) | 任务详情截图、直播截图、整理精要图 |
 
 ## 参考链接
