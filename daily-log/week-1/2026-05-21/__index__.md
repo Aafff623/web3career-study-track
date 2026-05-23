@@ -15,6 +15,7 @@
 |------|------|
 | [`2026-05-21.md`](./2026-05-21.md) | 当日笔记：做了什么、产出与检验、收获与卡点 |
 | [`TASK.md`](./TASK.md) | 任务描述、截图、交付证明 |
+| [`meetings/agent-24h-workflow.md`](./meetings/agent-24h-workflow.md) | AI 下乡 · Sunny 分享 · 24 小时 Agent 工作流（biliGPT 清洗版） |
 | [`assets/`](./assets/) | 截图、图片资源 |
 
 ## 关联引用
