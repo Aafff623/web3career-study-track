@@ -4,7 +4,7 @@
 
 ## 今日概览
 
-- 主题 / 活动：
+- 主题 / 活动：Co-Learning 直播 — Hermes Agent 从 0 到 1 部署 + Web3 基础全 10 节预习收尾
 - 状态：✅ 已完成
   - [x] 笔记 → [`2026-05-19.md`](./2026-05-19.md)
   - [x] 任务 → [`TASK.md`](./TASK.md)
@@ -15,6 +15,7 @@
 |------|------|
 | [`2026-05-19.md`](./2026-05-19.md) | 当日笔记：做了什么、产出与检验、收获与卡点 |
 | [`TASK.md`](./TASK.md) | 任务描述、截图、交付证明 |
+| [`meetings/hermes-from-zero.md`](./meetings/hermes-from-zero.md) | Hermes 从 0 到 1 直播笔记（biliGPT 清洗版） |
 | [`assets/`](./assets/) | 截图、图片资源 |
 
 ## 关联引用
