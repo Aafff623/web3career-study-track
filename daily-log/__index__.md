@@ -32,6 +32,7 @@ daily-log/
 | `__index__.md` | 当日索引：概览、参考链接、资料汇总 |
 | `YYYY-MM-DD.md` | 当日学习笔记（课程内容、Co-Learning 讨论、问答记录） |
 | `TASK.md` | 当日任务与产出（打卡内容、交付证明、Tx Hash） |
+| `meetings/` | 直播 / Co-Learning / Workshop 录播笔记（按场次拆分，slug 命名）— 仅当日有直播时建。约定详见 [`GUIDE.md`](../GUIDE.md) 的"直播录播笔记规范"节 |
 | `assets/` | 截图、图片等静态资源 |
 
 ---
@@ -99,6 +100,7 @@ daily-log/
 |------|------|
 | [`YYYY-MM-DD.md`](./YYYY-MM-DD.md) | 当日笔记：做了什么、产出与检验、收获与卡点 |
 | [`TASK.md`](./TASK.md) | 任务描述、截图、交付证明 |
+| [`meetings/<slug>.md`](./meetings/) | 直播录播笔记（当日有直播时）|
 | [`assets/`](./assets/) | 截图、图片资源 |
 
 ## 关联引用

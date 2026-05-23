@@ -14,6 +14,7 @@
 - `pre_study/` — 预习阶段 42 节知识笔记
 - `hackathon/` — Hackathon 项目代码与演示
 - `extras/` — 课程外加餐学习资料（按主题：`web3` / `ai` / `crossover`），详见 [`extras/README.md`](./extras/README.md)
+- `toolkit/` — 工具箱与方法论（`tools/` 工具收录 · `workflows/` 工作流分享），详见 [`toolkit/README.md`](./toolkit/README.md)
 - `reference/` — 规范文件
 
 ## 工作索引规范
@@ -36,6 +37,18 @@
 - 不写：个人情绪故事、比喻段落、"我觉得好酷"类感叹
 - 要写：本质是什么、要记住什么、在 AI×Web3 场景里意味着什么
 - 行动导向：涉及应对措施时，用编号列表直接列出
+
+### 直播录播笔记规范
+
+> 主办方直播 / Co-Learning / Workshop 的录播笔记沉淀，工作流详见 [`toolkit/workflows/livestream-note-pipeline.md`](./toolkit/workflows/livestream-note-pipeline.md)。
+
+- **文件位置**：`daily-log/week-N/YYYY-MM-DD/meetings/<slug>.md`
+- **slug 命名**：英文短横线，对应直播主题（如 `open-agentic-economy.md`、`ai-web3-basics.md`），不用中文
+- **同日多场**：分别用不同 slug 落到同一 `meetings/` 子目录下，不堆在同一文件
+- **元数据**：文件头加 YAML frontmatter，含 `type / date / week / source / extracted_by / cleaned_at`
+- **来源**：通常由 biliGPT 等外部工具从 Bilibili 录播自动提取（见 [`toolkit/tools/`](./toolkit/)）
+- **清洗原则**：保留原始内容，只动格式 / 错别字；不改写表述、不重组段落
+- **交叉引用**：在当日 `TASK.md` 的"产出"列、`YYYY-MM-DD.md` 的"今天做了什么"中加链接
 
 ### Git 提交
 
