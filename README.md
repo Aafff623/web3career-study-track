@@ -25,11 +25,11 @@
 ## ✨ Highlights (亮点聚焦)
 
 - **pre study note:  42/42** — 官网 handbook 中的 `AI Fundamentdals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节 + `Frontier` 6 节已经全部学习完成，每个主题(theme)文件夹包含: README.md(该原文的引用 + 人工阅读批注) + Theme-exercise.md(主题练习的demo)
-- **Agent 驱动** — 项目的索引以及规范维护交付给 `Claude Code` / `Kiro` / other `Agent` 工具接入进行系统化驱动，并在此探索沉淀 出 3 个适配工作流的自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note`, `git-commit-guide` ）
+- **Agent 驱动** — 项目的索引以及规范维护交付给 `Claude Code` / `Kiro` / other `Agent` 工具接入进行系统化驱动，并在此探索沉淀出 4 个适配工作流的自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note` / `git-commit-guide`）+ 工具箱 [`toolkit/`](./toolkit/)（biliGPT 直播录播笔记沉淀工作流）
 - **全链路记录** — `pre_study` → `daily-log` → `hackathon`，既是个人学习笔记仓库也是 **proof-of-work workspace**
 - **关于链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*, PPT 演示可附带, 可以额外探索其他开源项目的辅助进行项目成品的丰富多态化的展示
 
-
+![image-20260523200556553](assets/image-20260523200556553.png)
 
 ### TimeLine (时间线)
 
@@ -92,7 +92,7 @@ flowchart LR
 
 ## 📊 Progress (进程)
 
-> (记录维护时间) / 最后更新：2026-05-22 · Week 1 · Day 6
+> (记录维护时间) / 最后更新：2026-05-23 · Week 1 · Day 7
 
 
 
@@ -120,6 +120,7 @@ flowchart LR
 | 05-20 (Day 4) | ✅ | Web3 核心原理直播笔记（钱包 / 交易 / 区块链三问） |
 | 05-21 (Day 5) | ✅ | AI 下乡计划回看 + DigitalOcean Agent 基建 + 前三章复盘 |
 | 05-22 (Day 6) | ✅ | Hermes Agent 调教 + 仓库基建（Cursor MCP / extras）+ 三场直播全勤 |
+| 05-23 (Day 7) | ✅ | 新增 `toolkit/` 工具箱 + 直播录播笔记沉淀规范（biliGPT 清洗工作流）+ Week 1 直播全量回补（5/17、5/19、5/20、5/21、5/22 共 7 份 meetings 笔记） |
 
 
 
@@ -146,6 +147,7 @@ pre_study/              daily-log/              hackathon/
 
 handbook-feedback/       ← Handbook 反馈与共建
 extras/                  ← 课外加餐资料（web3 / ai / crossover）
+toolkit/                 ← 工具箱 + 工作流（biliGPT / livestream-note-pipeline）
 ```
 
 
@@ -187,6 +189,7 @@ web3career-study-track/
 │           ├── __index__.md     当日概览
 │           ├── 2026-05-XX.md    学习笔记
 │           ├── TASK.md          任务清单
+│           ├── meetings/        直播录播笔记（biliGPT 清洗版）
 │           └── assets/          截图
 │
 ├── hackathon/                 ← 输出：最终项目
@@ -198,6 +201,11 @@ web3career-study-track/
 │   ├── web3/                    Web3 主题资料
 │   ├── ai/                      AI 主题资料
 │   └── crossover/               AI × Web3 交叉主题
+│
+├── toolkit/                   ← 工具箱 + 工作流
+│   ├── README.md                总览 + 记录规范
+│   ├── tools/                   工具收录（AI 工具 / 提效 / 开发辅助）
+│   └── workflows/               工作流分享（含 livestream-note-pipeline）
 │
 ├── handbook-feedback/         ← Handbook 反馈与共建
 │
