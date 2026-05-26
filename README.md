@@ -11,9 +11,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/营期-2026--05--17%20to%2006--14-blue?style=for-the-badge" alt="period">
-  <img src="https://img.shields.io/badge/进度-42%2F42%20(100%25)-brightgreen?style=for-the-badge" alt="progress">
-  <img src="https://img.shields.io/badge/状态-进行中-brightgreen?style=for-the-badge" alt="status">
-  <img src="https://img.shields.io/badge/Hackathon-方向待定-orange?style=for-the-badge" alt="hackathon">
+  <img src="https://img.shields.io/badge/预习-42%2F42%20✅-brightgreen?style=for-the-badge" alt="pre-study">
+  <img src="https://img.shields.io/badge/Week%202-进行中-F59E0B?style=for-the-badge" alt="week2">
+  <img src="https://img.shields.io/badge/Hackathon-方向筛选中-orange?style=for-the-badge" alt="hackathon">
 </p>
 
 <p align="center">
@@ -24,10 +24,11 @@
 
 ## ✨ Highlights (亮点聚焦)
 
-- **pre study note:  42/42** — 官网 handbook 中的 `AI Fundamentdals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节 + `Frontier` 6 节已经全部学习完成，每个主题(theme)文件夹包含: README.md(该原文的引用 + 人工阅读批注) + Theme-exercise.md(主题练习的demo)
-- **Agent 驱动** — 项目的索引以及规范维护交付给 `Claude Code` / `Kiro` / other `Agent` 工具接入进行系统化驱动，并在此探索沉淀出 4 个适配工作流的自定义 Skill（`cascade-maintain` / `daily-log-sync` / `pre-study-note` / `git-commit-guide`）+ 工具箱 [`toolkit/`](./toolkit/)（biliGPT 直播录播笔记沉淀工作流）
-- **全链路记录** — `pre_study` → `daily-log` → `hackathon`，既是个人学习笔记仓库也是 **proof-of-work workspace**
-- **关于链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*, PPT 演示可附带, 可以额外探索其他开源项目的辅助进行项目成品的丰富多态化的展示
+- **pre study note: 42/42 ✅** — 官网 handbook 中 `AI Fundamentals` 11 节 + `Web3 Fundamentals` 10 节 + `AI-Web3-Bridge` 15 节 + `Frontier` 6 节全部完成。每主题含 `README.md`（原文引用 + 人工批注）+ `Theme-exercise.md`（最小实践）
+- **Agent 驱动** — 索引与规范维护由 `Claude Code` / `Kiro` / `Codex` 三端系统化驱动，沉淀 **6 个自定义 Skill**（`cascade-maintain` / `daily-log-sync` / `pre-study-note` / `git-commit-guide` / `wcb-sync` / `readme-polish`）+ 工具箱 [`toolkit/`](./toolkit/)
+- **全链路记录** — `pre_study`（输入）→ `daily-log`（过程）→ `hackathon`（输出），既是学习笔记也是 **proof-of-work workspace**
+- **WCB Agent API 接入** — 自动拉取营期任务（`events.listForLearner` / `tasks.listForLearnerByIds`），免去手动复制，已沉淀为可复用 [`wcb-sync`](.claude/skills/wcb-sync/SKILL.md) skill
+- **关于链上证明** — Hackathon 提交必须附 *测试网 Tx Hash*，不接受纯 PPT 项目
 
 ![image-20260523200556553](assets/image-20260523200556553.png)
 
@@ -84,15 +85,11 @@ flowchart LR
 
 同时可以用 **AI 正在把这些能力接入自动化流程**, 整个探索, 挖掘的过程还是很吸引并值得深究和学习的
 
-因此在这个*交叉*  的 AI Web3 地带，可以把两套语言学到能互译，互通, 在交接带中最后打磨成一个能在测试网上跑起来的 MVP, 展示出一些实用的价值, 这就是这个仓库的诞生起源, 记录过程探索的 学习记录 和 思考碰撞火花。
-
-
-
-
+因此在这个 *交叉* 的 AI Web3 地带，可以把两套语言学到能互译、互通，在交接带中最后打磨成一个能在测试网上跑起来的 MVP，展示出一些实用的价值。这就是这个仓库的诞生起源——记录过程探索的学习记录和思考碰撞火花。
 
 ## 📊 Progress (进程)
 
-> (记录维护时间) / 最后更新：2026-05-23 · Week 1 · Day 7
+> (记录维护时间) / 最后更新：2026-05-26 · Week 2 · Day 3
 
 
 
@@ -110,17 +107,14 @@ flowchart LR
 
 ### everyday-task (每日任务)
 
-记录每日核心产出
+记录每日核心产出。完整历史见 [`daily-log/`](./daily-log/)。
 
 | 日期 | 状态 | 主要产出 |
 |------|:---:|---------|
-| 05-17 (Day 1) | ✅ | 开营仪式整理精要 |
-| 05-18 (Day 2) | ✅ | `ai-fundamentals/` 11 节 + 两场直播笔记 + 规范架构 |
-| 05-19 (Day 3) | ✅ | `web3-fundamentals/` 10 节 + Case/Eval 归档 |
-| 05-20 (Day 4) | ✅ | Web3 核心原理直播笔记（钱包 / 交易 / 区块链三问） |
-| 05-21 (Day 5) | ✅ | AI 下乡计划回看 + DigitalOcean Agent 基建 + 前三章复盘 |
-| 05-22 (Day 6) | ✅ | Hermes Agent 调教 + 仓库基建（Cursor MCP / extras）+ 三场直播全勤 |
-| 05-23 (Day 7) | ✅ | 新增 `toolkit/` 工具箱 + 直播录播笔记沉淀规范（biliGPT 清洗工作流）+ Week 1 直播全量回补（5/17、5/19、5/20、5/21、5/22 共 7 份 meetings 笔记） |
+| 05-23 (Week 1 收官) | ✅ | `toolkit/` 工具箱 + biliGPT 清洗工作流 + Week 1 直播全量回补 + WCB API 接入 |
+| 05-24 (周日) | ⚪ | 休息 / 整理 Week 1 PoW Pack |
+| 05-25 (Week 2 Day 2) | ✅ | Co-learning 实时 + Long-term Memory 直播笔记，Hackathon 方向倾向 #1 |
+| 05-26 (Week 2 Day 3) | ⏳ | Virtuals + Cobo Agentic Wallet 直播待参加 |
 
 
 
@@ -168,10 +162,17 @@ web3career-study-track/
 │       ├── cascade-maintain/    链式维护
 │       ├── daily-log-sync/      每日日志同步
 │       ├── git-commit-guide/    Git 提交规范
-│       └── pre-study-note/      预习笔记整理
+│       ├── pre-study-note/      预习笔记整理
+│       ├── wcb-sync/            WCB 任务自动拉取
+│       └── readme-polish/       README 规范化打磨
+│
+├── .agents/                   ← Codex / 其他 Agent 配置（skill 双端同步）
+│   └── skills/                  与 .claude/skills/ 对齐
 │
 ├── .kiro/                     ← Kiro 配置（skill 规范）
 │   └── skills/                  与 .claude/skills/ 对齐
+│
+├── AGENTS.md                  ← Codex 接入规范（与 CLAUDE.md 互补）
 │
 ├── pre_study/                 ← 输入：42 节预习笔记
 │   ├── __index__.md             总目录 + 状态（⚪ / 🟡 / ✅）
@@ -314,7 +315,7 @@ flowchart TD
 
 ## 🏆 Hackathon 方向
 
-> Week 1-2 边学边筛，Week 2 结束前确定
+> Week 2 边学边筛，本周末最终确定。当前倾向 **#1 Smart Account + Session Key**。
 
 | # | 方向 | 一句话 |
 |---|------|--------|
