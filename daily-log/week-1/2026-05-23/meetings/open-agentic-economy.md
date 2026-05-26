@@ -623,17 +623,25 @@ transcript 在该问题尚未完整问完时中断，没有保留 Sophia 的回�
 
 ### [00:00](https://bibigpt.co/content/368965a5-1c40-4297-9c77-c8d518fb8c19?t=0.000) - 🎙️ 活动开场与课程规划
 
+![章节截图 00:00](https://bibigpt-apps.chatvid.ai/screenshots/x.com/1qxvvkQkVXQxB/0.jpg)
+
 视频开篇介绍了 AI × Web3 School 的共学营背景与课程安排。主持人在嘉宾因时差稍作延迟期间，与社区成员互动，讨论了课程任务设计、积分激励机制以及如何通过输出倒逼输入来提升学习质量。重点强调了下周课程深度的增加，鼓励学员利用空余时间完成助教答疑，并预告了后续黑客松奖金池的潜在激励。
 
 ### [35:43](https://bibigpt.co/content/368965a5-1c40-4297-9c77-c8d518fb8c19?t=2143.000) - 💡 AI Agent 与以太坊的互联未来
+
+![章节截图 35:43](https://bibigpt-apps.chatvid.ai/screenshots/x.com/1qxvvkQkVXQxB/2143.jpg)
 
 嘉宾 Sophia 深入分析了 AI Agent 如何从简单的聊天机器人转变为具备经济参与能力的独立个体。她指出，传统互联网基础设施（如密码、API Key）无法满足 Agent 的安全与信任需求，而以太坊凭借去中心化、抗审查、开源等设计原则（CROPS 原则），成为最适合 Agent 运行的协调层。以太坊能为 Agent 提供可验证的身份、声誉记录及自动化的合约执行，确保其在开放经济环境中的行为逻辑可被监管与追溯。
 
 ### [50:43](https://bibigpt.co/content/368965a5-1c40-4297-9c77-c8d518fb8c19?t=3043.000) - ⚙️ ERC-8004 与代际经济标准
 
+![章节截图 50:43](https://bibigpt-apps.chatvid.ai/screenshots/x.com/1qxvvkQkVXQxB/3043.jpg)
+
 本章节详细解析了技术标准如何赋能 AI Agent 经济。ERC-8004 为 Agent 提供了可验证的数字身份与声誉注册机制，解决了信任缺失问题；而 ERC-8183 则支持机器对机器（M2M）的直接支付，允许 Agent 利用稳定币进行透明、受控的商业交易。这些协议的落地，使得 Agent 能够以更低成本、更高透明度在链上完成复杂商务逻辑的闭环，是构建去中心化 AI 经济生态的基石。
 
 ### [53:14](https://bibigpt.co/content/368965a5-1c40-4297-9c77-c8d518fb8c19?t=3194.000) - 🚀 实战案例与未来展望
+
+![章节截图 53:14](https://bibigpt-apps.chatvid.ai/screenshots/x.com/1qxvvkQkVXQxB/3194.jpg)
 
 Sophia 通过以太坊基金会利用 AI Agent 进行公共物品资助分配的实例，展示了 AI 如何扩展人类判断力的边界。她建议开发者通过"Eth Skills"等工具库深入理解标准应用。针对未来展望，嘉宾强调了支付系统将是 AI Agent 最快落地的领域，因为链上智能合约能通过规则限制赋予 Agent 明确的支出上限，从而实现"可控的自主"。此外，她鼓励女性开发者及各背景 builder 积极参与相关生态建设，通过实践验证 AI 与 Web3 结合的商业机会。
 
