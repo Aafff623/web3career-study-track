@@ -4,18 +4,22 @@
 
 ## 目前状态
 
-⚪ **未开工**——Week 1-2 还在学习和选方向阶段，这块要等 **Week 3（2026-05-31 起）** 才动手。
+🟡 **方向已确定** — 2026-05-26 收敛到 **Smart Account + Session Key（#1）**，Week 3（2026-05-31 起）启动开发。
 
-## 候选方向
+## 最终方向
 
-具体看根目录的 [`steering.md`](../steering.md) 里 "Hackathon 候选方向" 这一节，目前桌上四个选项：
+**Smart Account + Session Key** — 给 AI Agent 一把 *"只能在某段时间、某个金额内、做某类事"* 的钥匙，用户随时可撤销。
 
-1. **Smart Account + Session Key** — 让 Agent 安全干活
-2. **Agentic Commerce 闭环** — 决策→执行→DeFi→恢复
-3. **AI-native Wallet** — 重新设计钱包确认 UX
-4. **链上数据分析 Agent** — 把"看 Etherscan 看到累"自动化
+> 完整选型 rationale 见 [`DIRECTION.md`](./DIRECTION.md)
 
-Week 2 结束前必须收敛到 1 个。
+四个候选的对比回顾：
+
+| # | 方向 | 结论 |
+|---|------|------|
+| 1 | **Smart Account + Session Key** | ✅ **选定** — 生态成熟（ERC-4337 / ZeroDev / Biconomy），技术门槛适中，可演示性强 |
+| 2 | Agentic Commerce 闭环 | ❌ 放弃 — 4 周内做不完完整闭环，状态机太复杂 |
+| 3 | AI-native Wallet | ❌ 放弃 — 偏 UX 设计，非技术长板 |
+| 4 | 链上数据分析 Agent | 💡 保留为扩展点 — 可与 #1 结合（链上操作日志作为 Agent 可验证记忆）|
 
 ## 子目录
 

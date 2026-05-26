@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/营期-2026--05--17%20to%2006--14-blue?style=for-the-badge" alt="period">
   <img src="https://img.shields.io/badge/预习-42%2F42%20✅-brightgreen?style=for-the-badge" alt="pre-study">
   <img src="https://img.shields.io/badge/Week%202-进行中-F59E0B?style=for-the-badge" alt="week2">
-  <img src="https://img.shields.io/badge/Hackathon-方向筛选中-orange?style=for-the-badge" alt="hackathon">
+  <img src="https://img.shields.io/badge/Hackathon-Smart%20Account%20%2B%20Session%20Key-brightgreen?style=for-the-badge" alt="hackathon">
 </p>
 
 <p align="center">
@@ -315,7 +315,7 @@ flowchart TD
 
 ## 🏆 Hackathon 方向
 
-> Week 2 边学边筛，本周末最终确定。当前倾向 **#1 Smart Account + Session Key**。
+> **已确定：Smart Account + Session Key（#1）** — Week 2 方向收敛完成，Week 3 启动开发。
 
 | # | 方向 | 一句话 |
 |---|------|--------|
