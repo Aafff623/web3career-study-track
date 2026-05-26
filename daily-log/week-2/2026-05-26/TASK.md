@@ -6,8 +6,8 @@
 
 | # | 活动 / 任务 | 时间 | 学分 | 状态 |
 |---|------|------|------|------|
-| 1 | Virtuals（无 WCB 学分任务，仅可观看） | 19:00-20:00 | — | ⚪ 未开始 |
-| 2 | Product manager of Cobo Agentic Wallet（无 WCB 学分任务，仅可观看） | 20:00-21:00 | — | ⚪ 未开始 |
+| 1 | Virtuals（无 WCB 学分任务，仅可观看） | 19:00-20:00 | — | ✅ 已完成 |
+| 2 | Product manager of Cobo Agentic Wallet（无 WCB 学分任务，仅可观看） | 20:00-21:00 | — | ✅ 已完成 |
 
 > 状态图例：⚪ 未开始 · ⏳ 进行中 · ✅ 已完成 · ❌ 错过 · 📤 已提交 · ⏸️ 待平台创建
 
@@ -43,12 +43,23 @@
 
 > 实际交付的东西，列要点即可。详细叙述放 [`2026-05-26.md`](./2026-05-26.md)。
 
-- [待填]
+### Virtuals
+
+- 3 条有效笔记：
+  1. Agent 资产化逻辑 —— 创建、持币、分享收益，Smart Account 的 programmable 特性适合自动化收益分配
+  2. 去中心化所有权 vs 托管安全 —— Agent 所有权交给社区后，操作权限如何安全托管？Session Key 是答案
+  3. 代币化经济模型可作为 Hackathon 扩展设计
+
+### Cobo Agentic Wallet
+
+- 3 条有效笔记：
+  1. Agent 钱包需要预设策略 + 自动审批流，无法像人类一样手动确认每笔交易
+  2. Session Key 的设计哲学 = "特定条件下的有限权限"（时间/金额/操作类型限制），与 Cobo 策略引擎思路一致
+  3. MPC + AA 的结合点 —— MPC 管密钥分片，AA 管权限策略，Session Key 可作为桥梁
 
 ## 交付证明
 
-> 截图 / 链接 / Tx Hash / commit hash
-
-- [待填]
+- Virtuals Zoom 参加记录 / X 直播回放
+- Cobo Agentic Wallet Zoom 参加记录 / X 直播回放
 
 ![](./assets/)
