@@ -39,6 +39,7 @@
 - **你会学到**：该方向的核心问题、真实使用场景、可参考的项目 / 工具 / 方法，以及它如何启发 AI × Web3 Hackathon 选题
 - **课前准备**：带上你的 Week 2 问题地图、主方向选择、待验证假设和想讨论的问题；建议会后整理 3 条有效笔记或一个可行动的下一步
 - **提交要求**：整理 3 条有效笔记或一个可行动的下一步
+- **直播笔记**：[`meetings/long-term-memory-for-ai-agents.md`](./meetings/long-term-memory-for-ai-agents.md)
 
 #### 会议链接
 

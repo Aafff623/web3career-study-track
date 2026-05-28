@@ -36,6 +36,7 @@
 1. 提交人对 Cobo Agentic Wallet 的理解与笔记
 2. 1 条有效笔记 + 1 个可行动的下一步
 3. 转发 X 直播并 @Cobo_Global
+- **直播笔记**：[`meetings/cobo-agentic-wallet.md`](./meetings/cobo-agentic-wallet.md)
 
 ## 产出
 
