@@ -1,43 +1,41 @@
 # 2026-05-26 任务
 
-> Week 2 · Day 3 · 周二 · 自动拉取自 WCB Agent API · 拉取时间 2026-05-23
+> Week 2 · Day 3 · 周二 · 自动拉取自 WCB Agent API · 拉取时间 2026-05-28（重新拉取校正）
 
 ## 今日任务清单
 
 | # | 活动 / 任务 | 时间 | 学分 | 状态 |
 |---|------|------|------|------|
 | 1 | Virtuals（无 WCB 学分任务，仅可观看） | 19:00-20:00 | — | ✅ 已完成 |
-| 2 | Product manager of Cobo Agentic Wallet（无 WCB 学分任务，仅可观看） | 20:00-21:00 | — | ✅ 已完成 |
+| 2 | Product manager of Cobo Agentic Wallet：实时参加 | 20:00-21:00 | +30 | ⚪ 未提交 |
+| 3 | Product manager of Cobo Agentic Wallet：观看回放（与 #2 互斥） | 回放发布后 | +15 | ⏸️ 不选 |
 
-> 状态图例：⚪ 未开始 · ⏳ 进行中 · ✅ 已完成 · ❌ 错过 · 📤 已提交 · ⏸️ 待平台创建
+> 状态图例：⚪ 未开始 · ⏳ 进行中 · ✅ 已完成 · ❌ 错过 · 📤 已提交
+> 互斥说明：#2/#3 为同一活动互斥，仅可选一个提交
 
 ## 活动详情
 
 ### 1. Virtuals
 
 - **时间**：2026-05-26 19:00-20:00（Asia/Shanghai）
-- **适合对象**：AI × Web3 School 学员，尤其是正在进行 Week 2 方向探索、问题地图和 proposal 初稿的同学
-- **你会学到**：该方向的核心问题、真实使用场景、可参考的项目 / 工具 / 方法，以及它如何启发 AI × Web3 Hackathon 选题
-- **课前准备**：带上你的 Week 2 问题地图、主方向选择、待验证假设和想讨论的问题；建议会后整理 3 条有效笔记或一个可行动的下一步
-
-#### 会议链接
-
-- Zoom：<https://us06web.zoom.us/j/85043365276?pwd=NYD3sCb01uVa1Z5nWTN8h57F5ryBU6.1>
-- 会议号：850 4336 5276 · 密码：513447
-- X 直播：<https://x.com/i/broadcasts/1rGmqoBwXvqGy>
+- **会议链接**：https://us06web.zoom.us/j/85043365276?pwd=NYD3sCb01uVa1Z5nWTN8h57F5ryBU6.1
+- **会议号**：850 4336 5276 · 密码：513447
+- **X 直播**：https://x.com/i/broadcasts/1rGmqoBwXvqGy
 
 ### 2. Product manager of Cobo Agentic Wallet
 
 - **时间**：2026-05-26 20:00-21:00（Asia/Shanghai）
-- **适合对象**：AI × Web3 School 学员，尤其是正在进行 Week 2 方向探索、问题地图和 proposal 初稿的同学
-- **你会学到**：该方向的核心问题、真实使用场景、可参考的项目 / 工具 / 方法，以及它如何启发 AI × Web3 Hackathon 选题
-- **课前准备**：带上你的 Week 2 问题地图、主方向选择、待验证假设和想讨论的问题；建议会后整理 3 条有效笔记或一个可行动的下一步
+- **学分**：实时 +30 / 回放 +15（互斥）
+- **互斥组**：week2-526-cobo-agentic-wallet
+- **会议链接**：https://us06web.zoom.us/j/83290671118?pwd=HYObT38V7hbGaeEcjgtsOnaeTaCaDR.1
+- **会议号**：832 9067 1118 · 密码：577562
+- **X 直播**：https://x.com/i/broadcasts/1OxwbldEmagJB
 
-#### 会议链接
+#### 直播产出要求
 
-- Zoom：<https://us06web.zoom.us/j/83290671118?pwd=HYObT38V7hbGaeEcjgtsOnaeTaCaDR.1>
-- 会议号：832 9067 1118 · 密码：577562
-- X 直播：<https://x.com/i/broadcasts/1OxwbldEmagJB>
+1. 提交人对 Cobo Agentic Wallet 的理解与笔记
+2. 1 条有效笔记 + 1 个可行动的下一步
+3. 转发 X 直播并 @Cobo_Global
 
 ## 产出
 
@@ -61,5 +59,6 @@
 
 - Virtuals Zoom 参加记录 / X 直播回放
 - Cobo Agentic Wallet Zoom 参加记录 / X 直播回放
+- Cobo task proof 提交（需补）
 
 ![](./assets/)
