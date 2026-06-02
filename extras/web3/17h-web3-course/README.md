@@ -20,10 +20,10 @@ ERC20 / FundMe 众筹 → Solidity 基础 → Hardhat 测试 → ERC721 NFT → 
 
 | # | 主题 | 状态 | 笔记 |
 |---|------|------|------|
-| 1 | （未拉取） | ⚪ | _暂无_ |
+| 1 | 区块链基础、钱包、密码学与 Remix 入门 | ✅ | [`01-blockchain-basics.md`](./01-blockchain-basics.md) |
 | 2 | Solidity 基础 — Hello World | ✅ | [`02-solidity-hello-world.md`](./02-solidity-hello-world.md) |
 | 3 | Solidity 进阶 — FundMe & ERC-20 | ✅ | [`03-fundme-erc20.md`](./03-fundme-erc20.md) |
-| 4 | （未拉取） | ⚪ | _暂无_ |
+| 4 | Hardhat 开发框架：完成 FundMe | ✅ | [`04-hardhat-fundme.md`](./04-hardhat-fundme.md) |
 | 5 | Hardhat 开发框架 — 合约测试 | ✅ | [`05-hardhat-testing.md`](./05-hardhat-testing.md) |
 | 6 | 跨链应用 — CCIP | ✅ | [`06-ccip-cross-chain.md`](./06-ccip-cross-chain.md) |
 | 7 | 接下来做什么 | ✅ | [`07-next-steps.md`](./07-next-steps.md) |
@@ -32,7 +32,8 @@ ERC20 / FundMe 众筹 → Solidity 基础 → Hardhat 测试 → ERC721 NFT → 
 
 - **2026-05-23**：5 课笔记入库（biliGPT 清洗版），跟做实操尚未启动
 - **2026-05-24**：参考代码克隆入 [`code/`](./code/) — 来源 [smartcontractkit/Web3_tutorial_Chinese](https://github.com/smartcontractkit/Web3_tutorial_Chinese)，已剥离 `.git`，主仓库通过 [`./.gitignore`](./.gitignore) 排除该目录
-- **TODO**：第 1 课 / 第 4 课笔记待补；跟做实操可基于 `code/` 起步，产出落到 [`hackathon/`](../../../hackathon/) 或独立 practice 目录
+- **2026-06-02**：第 1 课 + 第 4 课笔记入库（biliGPT 清洗版）— 区块链基础 / Hardhat FundMe
+- **TODO**：7/7 课笔记全部到位；跟做实操可基于 `code/` 起步，产出落到 [`hackathon/`](../../../hackathon/) 或独立 practice 目录
 
 ## 笔记规范
 
